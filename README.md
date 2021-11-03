@@ -6,3 +6,6 @@ Ceci est un répertoire de travail sur le modèle éditorial de l’Encylopédie
 2. la personnalisation des [XSL TEI Stylesheets](http://www.tei-c.org/tools/stylesheets/)
 pour la conversion des manuscrits des auteurs dans ce modèle éditorial
 
+## Meta
+
+- [feuille de route](https://github.com/ouvroir/encyclopedie/milestones?direction=asc&sort=due_date&state=open)
