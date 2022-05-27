@@ -1,7 +1,67 @@
 # Encyclopédie numérique
 
 ---
+## Rapport intermédiaire - 7 mai 2022
+
+relecture: ajouts à faire une fois l'accès au gitlab est réglé
+
+- [ ] corriger intro CIECO etc.
+- [ ] schéma en français? 
+- [ ] source primaire / primitive (p10-12)
+- [ ] fiches: images! (stockage, affichage...)
+
+
+
+## Rencontre du 13 mai 2022
+
+Documents fournis pour la rencontre
+- introduction du rapport ;
+- fiche Métopes ;
+- fiche Quire.
+
+choix de l'outil pour la production du rapport (occasion de tester des solutions)
+
+### échéances/planning
+**6 mai**: avoir une partie rédigée et se concentrer sur avoir finalisé certains éléments
+**10-11 mai**: rencontre de comité de l'encyclopédie (piocher les éléments, rendre compte du processus)
+**v1 fin mai**: rapport fr rédigé et fiches  (circulation interne possible)
+**v2 été**: traudction en anglais
+***request for commons*** septebmre: (~1 mois)
+publication novembre: version complète billingue papier+numérique
+
+faire un autre appel pour financer les heures à l'été et à l'automne (à revalider après le 10 mai)
+
+### premiers textes du rapport : introduction et fiches descriptives
+
+retours
+- place des éditeurs (articulation entre éditeurs et chaînes éditoriale)
+- pérennisation (apparaîtera dans les contraintes)
+- ouvroir reformule le contexte de la commande et permettre à Antoine et Roch de s'émanciper du contexte de la commande (à renvoyer dans un avant-propos à rédiger par Emmanuel et Marcello?)
+- si trop générique, c'est déjà présent (rapport Mind the gap)
+- enjeux spécifiques du cas d'usage particulier → peut déboucher sur une question générique qui va guider le rapport
+
+cadre théorique
+- éditorialisation (curation/organisation)
+- notion de document
+
+manque un peu la partie multimédia (dès qu'on a autre chose que du texte, autre contenus au statut divers et issu du web principalement)
+
+possibilités d'automatisation de la validation (comme Alix et HTR United)
+
+forge / fabrique ~ processeur > briques logicielles
+terminologie de la chaîne: issue du single-source publishing (processus linéaire)
+réfléchir aux termes 
+
+### discussion sur l'orientation du travail
+
+quelle méthode pour diffuser lors du rfc? (quelle plateforme?)
+
+envisager une présentation publique à l'automne
+
+---
+
 ## Des chaînes de publication multisupport (16 mars 2022)
+
 Rapport sur les générateurs de site statiques
 
 @quest titre
@@ -58,6 +118,8 @@ Convertisseurs de documents.
 
 
 Milieu qui tourne en rond avec des impératifs technologiques plutôt que des pb d’usages.
+
+---
 
 ## 3 novembre 2021
 
