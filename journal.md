@@ -5,12 +5,12 @@
 
 relecture: ajouts à faire une fois l'accès au gitlab est réglé
 
-- [ ] corriger intro CIECO etc.
-- [ ] schéma en français? 
-- [ ] source primaire / primitive (p10-12)
-- [ ] fiches: images! (stockage, affichage...)
+- [x] corriger intro CIECO etc.
+- [x] schéma en français? 
+- [x] source primaire / primitive (p10-12)
+- [x] fiches: images! (stockage, affichage...)
 
-
+issues ajoutées le 1er juin
 
 ## Rencontre du 13 mai 2022
 
