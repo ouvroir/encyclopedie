@@ -14,13 +14,22 @@ Tags: éditeurs
 
 [Substance](https://substance.io)
 
-### ...
+### Trix
+
+[Trix](https://trix-editor.org)
+
+### Dokieli
+
+[dokieli](https://dokie.li)
+
+CKEditor
+https://ckeditor.com
 
 https://quilljs.com/ ++
 https://yabwe.github.io/medium-editor/
 https://editorjs.io ++
 https://github.com/ianstormtaylor/slate ++
-https://ckeditor.com
+
 
 
 ## Éditeurs web académiques
@@ -29,7 +38,9 @@ https://ckeditor.com
 
 ### Wax
 
-### ...
+### Manuscript
+
+[Manuscript](https://www.manuscripts.io)
 
 ## Éditeurs XML Web
 
@@ -45,32 +56,20 @@ https://ckeditor.com
 
 [Editix](https://www.editix.com)
 
-https://holloway.nz/doctored/ +++ XML
+### Doctored
+
+[Doctored](https://holloway.nz/doctored/)
+
+### TEI Web editor
+
+[TEI Web editor](https://digital-editing.fas.harvard.edu/editor/)
 
 
 # Liste d’éditeurs web (vrac à trier)
 
 (première liste non triée)
 
-Éditeurs de code informatique
-
-https://github.com/marktext/marktext
-https://github.com/vnotex/vnote
-https://github.com/zyedidia/micro
-https://joplinapp.org/
-
-
-
-## anciens
-
-
-https://github.com/zyedidia/micro
-https://micro-editor.github.io
-
-https://github.com/iggredible/Learn-Vim
-
-https://www.manuscripts.io/about/ +++
-https://www.authorea.com/
+Ancien
 
 http://nexttexteditor.com/scribe/ + abandonné pour Prosemirror
 https://www.theguardian.com/info/2019/jan/24/leaving-scribe
@@ -90,8 +89,6 @@ https://productcoalition.com/using-quill-js-to-build-a-wysiwyg-editor-for-your-w
 
 https://jekyllcms.grep.ro
 
-
-https://dokie.li/
 https://www.fiduswriter.org/how-it-works/
 
 
@@ -102,7 +99,7 @@ Formats
 https://mdxjs.com/
 
 
-## éditeurs en ligne 
+## CMS contentfull
 
 Éditeurs 
 https://prismic.io
