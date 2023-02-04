@@ -34,6 +34,12 @@ https://force11.org/info/joint-declaration-of-data-citation-principles-final/
 
 [OpenCitations](https://opencitations.net)
 
+DOAJ (si nous nous décrivons comme un périodique)
+
+Sherpa Romeo et Mir@bel
+
+
+
 ## Modèles documentaires
 
 ### Text Encoding Initiative
