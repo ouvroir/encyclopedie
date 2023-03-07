@@ -1,6 +1,25 @@
 # Encyclopédie numérique
 
 ---
+## Réunion 26 janvier
+
+- importance des chronologies: les gens font des recensions → 1ère fois quoi... temporalité, quand est-ce qu'un phénomène commence
+- utiliser voyant pour visualiser les mots qui apparaissent dans le texte? (excluant les mots pas intéressants)
+- capsules? très ouvert... entrevue
+- rendre l'encyclopédie plus attractive
+- enrichissements numériques qui vont du côté de la démonstration
+- bulle, ex Marie: exposition → acquisitions pour l'exposition = étude de cas
+- encadrés avec des sujets qui ne sont pas abordés par un chapitre complet
+- 
+
+<!--écoute Lena 2h03-->
+
+<!-- notes Lena: - acquisitions refusées par les comités, acquisitions rêvées (souhaitées mais refusées avant comité) - cas particulier: Mika rottenberg acqusiition par fond d'investissement-->
+
+
+
+
+
 ## Rapport intermédiaire - 7 mai 2022
 
 relecture: ajouts à faire une fois l'accès au gitlab est réglé
