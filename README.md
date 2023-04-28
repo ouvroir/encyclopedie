@@ -12,7 +12,7 @@ Ceci est un répertoire de travail sur le modèle éditorial de l’Encylopédie
 
 - [Propositions pour la chaîne éditoriale](./chaine-editoriale.md)
 - [Comparatif des éditeurs web](./benchmark-editeur-web.csv)
-- [Chaînes éditoriales](./chaines.md)
+- [Autres chaînes éditoriales](./chaines.md)
 - [Rapport de recherche sur les forges de publication (preprint)](https://ecrinum.gitpages.huma-num.fr/publishing-workflow-report-preprint/)
 
 ## Meta
