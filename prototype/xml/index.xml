@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<teiCorpus xmlns="http://www.tei-c.org/ns/1.0"
+   xmlns:xi="http://www.w3.org/2001/XInclude">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">La Science des mœurs au siècle des Lumières</title>
+            <title type="sub">Études ledolciennes, n° 1</title>
+         </titleStmt>
+         <publicationStmt>
+            <publisher></publisher>
+            <date when="2021">2021</date>
+            <idno type="DOI">10.400/revuehn2355</idno>
+         </publicationStmt>
+         <seriesStmt>
+            <title xml:lang="fre" type="main">L’Architecture de Ledoux</title>
+            <idno type="URI">http://www.ledoux-architecture.fr</idno>
+         </seriesStmt>
+         <sourceDesc xml:id="ledoux-etudes">
+            <p>Fichier nativement numérique</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <xi:include href="./article01.xml" parse="xml">
+      <xi:fallback>Fichier non trouvé</xi:fallback>
+   </xi:include>
+   <xi:include href="./article02.xml" parse="xml">
+      <xi:fallback>Fichier non trouvé</xi:fallback>
+   </xi:include>
+</teiCorpus>
