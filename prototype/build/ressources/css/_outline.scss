@@ -1,0 +1,45 @@
+@charset "UTF-8";
+/* ==========================================================================
+   >>Outline
+   ========================================================================== */
+a,
+button,
+[tabindex] {
+  &:hover,
+  &:focus,
+	&:active {
+		outline: 0;
+	}
+}
+
+html[data-whatinput="keyboard"] {
+  a,
+  button,
+  .inputOL,
+  [tabindex] {
+    &:focus {
+  		outline: 3px dashed #F93700;
+      outline-offset: 3px;
+  	}
+  }
+  .header_logo a {
+    &:focus {
+      outline-offset: -10px;
+    }
+  }
+  .header_btn button,
+  .search_form button,
+  .postsList_lk,
+  .infoBlock_title,
+  .side_trigger button {
+    &:focus {
+      outline-offset: -3px;
+    }
+  }
+  .cta_lk a,
+  .settings_group.js-settings-reset {
+    &:focus {
+      outline-offset: -5px;
+    }
+  }
+}

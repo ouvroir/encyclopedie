@@ -17,7 +17,7 @@
          <publicationStmt>
             <publisher />
             <date when="2021">2021</date>
-            <idno type="DOI">10.400/revuehn2355/article02</idno>
+            <idno type="DOI">10.400/encynucma/article02</idno>
             <availability>
                <licence target="https://creativecommons.org/licenses/by/4.0/">
                   <p>Ce contenu est mis à disposition sous licence Creative Commons Attribution 4.0.</p>
@@ -47,7 +47,8 @@
    <text>
       <front>
          <div type="abstract">
-            <p></p>
+            <p>Ut velit mauris, egestas sed, gravida nec, ornare ut, mi. Aenean ut orci vel massa suscipit pulvinar. Nulla sollicitudin. Fusce varius, ligula non tempus aliquam, nunc turpis ullamcorper nibh, in tempus sapien eros vitae ligula. Pellentesque rhoncus nunc et augue. Integer id felis. Curabitur aliquet pellentesque diam. Integer quis metus vitae elit lobortis egestas. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi vel erat non mauris convallis vehicula. Nulla et sapien. Integer tortor tellus, aliquam faucibus, convallis id, congue eu, quam. Mauris ullamcorper felis vitae erat. Proin feugiat, augue non elementum posuere, metus purus iaculis lectus, et tristique ligula justo vitae magna.</p>
+            <p>Aliquam convallis sollicitudin purus. Praesent aliquam, enim at fermentum mollis, ligula massa adipiscing nisl, ac euismod nibh nisl eu lectus. Fusce vulputate sem at sapien. Vivamus leo. Aliquam euismod libero eu enim. Nulla nec felis sed leo placerat imperdiet. Aenean suscipit nulla in justo. Suspendisse cursus rutrum augue. Nulla tincidunt tincidunt mi. Curabitur iaculis, lorem vel rhoncus faucibus, felis magna fermentum augue, et ultricies lacus lorem varius purus. Curabitur eu amet.</p>
          </div>
       </front>
       <body>
@@ -138,7 +139,7 @@
          </div>
       </body>
       <back>
-         <div type="authorNotes">
+         <div type="notes">
             <head>Notes</head>
             <note xml:id="n0001"> <p>Les <orgName>Conseils d’agriculture, des arts ou du commerce</orgName>, le <orgName>Conseil des Ponts et chaussées</orgName>, etc.</p> </note>
             <note xml:id="n0002"><p>« 25 mai 1791. Loi relative à l’organisation du ministère, Décret de l’Assemblée nationale, du 27 avril 1791 » dans <hi rend="italic">Lois et actes du gouvernement</hi>, Paris, Imprimerie royale, 1834-1835, T. III, p. 213 et suiv.</p> </note>

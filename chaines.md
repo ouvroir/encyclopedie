@@ -5,15 +5,77 @@ Authors: emchateau
 
 ## Chaînes éditoriales
 
+Voir le [Rapport de recherche sur les forges de publication](https://ecrinum.gitpages.huma-num.fr/publishing-workflow-report-preprint/) rédigé dans le cadre du Partenariat *Des nouveaux usages des collections dans les musées d’art*.
+
 
 ## Chaînes XML
 
-Métopes
+## MÉTOPES Méthodes et outils pour l’édition structurée
 
-Scenarii
+http://www.metopes.fr
+
+> Le projet MÉTOPES – Méthodes et outils pour l’édition structurée – vise à mettre au point, à développer et diffuser, librement dans la sphère publique, par des actions de formation auprès des éditeurs publics et des revues labellisées CNRS un ensemble d’outils et de méthodes leur permettant d’organiser leur production et leur diffusion papier et numérique sur le modèle du Single Source Publishing.
+>
+> Ce projet, principalement orienté vers la production des contenus, est fortement articulé, par le biais de la prise en compte de la norme ONIX et de ses exploitations, aux travaux et développements menés parallèlement par [OpenEdition](http://cleo.openedition.org/) (USR 2004 du CNRS, Marseille). L’ensemble des deux dispositifs permet de développer conjointement un réservoir de contenus normés (XML-TEI), à haute valeur éditoriale ajoutée (évalués, éditorialisés, structurés…), et un système de catalogage et d’exposition (diffusion) ouvrant vers la possibilité du déploiement d’un catalogue commun (ONIX) des éditeurs publics associés (métadonnées et contenus). Après avoir constitué la partie recherche développement de l’infrastructure nationale de recherche NUMEDIF, le projet est devenu en 2018 infrastructure de recherche à part entière (Université de Caen Normandie - CNRS) sous le nom d’IR METOPES. Celle-ci fonctionne en synergie avec les trois autres infrastructures nationales dédiées à l’IST : OpenEdition, Collex-Persée et HAL.
+
+https://www.unicaen.fr/recherche/mrsh/document_numerique/projets/metopes
+
+## Scenarii
+
+https://scenari.software
+
+> Des solutions logicielles pour créer et structurer vos contenus, publier et diffuser vos documents
+
+## OpenEdition
+
+https://lodel.hypotheses.org
+
+> **Lodel est un logiciel d’édition électronique simple d’utilisation et adaptable à des usages particuliers**, développé par [OpenEdition](http://cleo.openedition.org/)depuis 2000 et distribué sous licence GPL 2.
+> Il appartient à la famille des gestionnaires de contenus (en anglais, *Content management system*, CMS) et s’est **spécialisé dans l’édition de textes longs et complexes dans un environnement éditorial très structuré**.
+
+Lodel est un CMS destinée à l’édition savante. Il est développé en PHP et utilise une conversion de documents XML TEI pour la publication des articles. Un modèle de document ([Word](https://github.com/OpenEdition/lodel/wiki/Modèle-de-document-pour-Microsoft-Word) ou [OO](https://github.com/OpenEdition/lodel/wiki/Modèle-de-document-pour-LibreOffice)) permet de styler les documents issus de traitements de texte en accord avec le modèle éditorial fourni avec Lodel. 
+
+### Lodel
+
+https://github.com/OpenEdition/lodel
+
+CMS dédié à l’édition numérique de contenus variés
+
+Statut 2022 :
+
+- version 1.0.X : Maintenance corrective minimale.
+- version 2.0.0 : En cours de développement à l’aide du framework Symfony. Implémentation des fonctionnalités requises pour le déploiement de la plateforme Books, ainsi que les modules associés (parseur XML-TEI, portage du générateur de PDF et d’ePub 3...).
+
+La version 2 est annoncée pour l’automne 2023. Celle-ci reposera sur l’utilisation des outils développés dans le cadre de Métopes.
+
+### OTX (github)
+
+https://github.com/OpenEdition/OTX
+
+Convertisseur de documents (doc, docx, odt, XML) en XML-TEI, format central repris en entrée dans le système d’information.
+
+Statut 2021 : Maintenance corrective. Une nouvelle version, baptisée Circé, a été initiée en collaboration avec l’ infrastructure de recherche Métopes et le CERTIC (Centre de ressources technologiques pour les TIC - Université de Caen Normandie). Elle vise notamment à la convergence des spécifications TEI utilisées par OpenEdition et Métopes.
+
+### TEI OpenEdition Schema
+
+https://github.com/OpenEdition/tei.openedition
+
+https://github.com/OpenEdition/tei.openedition
+
+## Érudit
+
+https://www.erudit.org
+
+Schéma https://www.erudit.org/xsd/article/2.0.0/doc/schemas/eruditid_xsd/schema-summary.html
+
+## PLOS et JATS
+
+https://plos.org
 
 
 ## Chaînes basées sur Markdown
+
+Rapport sur les chaînes
 
 #### Quire
 
@@ -49,5 +111,43 @@ https://manifoldapp.org/
 ### Questions, à creuser
 
 - quand on ajoute des contenus mutlimédias, où est-ce qu'ils sont/doivent être hébergés? 
-- 
 
+## Peritext
+
+https://peritext.github.io
+
+> Peritext vise à équiper des pratiques d’écriture et d'édition savante sensibles et polymorphiques. Il articule des expérimentations situées avec des outils réutilisables pour questionner le rôle de la matérialité dans les pratiques de publication de la recherche universitaire. Ce document présente les différentes composantes du projet.
+
+#### Ovide
+
+https://peritext.github.io/ovide/
+
+> Ovide est un logiciel expérimental d'écriture et d'édition. Il permet de travailler avec des images, vidéos, visualisations, références bibliographiques et autres entrées de glossaire avancées, et de produire une multitude d'éditions imprimées et web à partir d'un même corpus d'écrits.
+
+### Fonio
+
+https://fonio.medialab.sciences-po.fr/demo
+
+> Fonio is a collaborative scholarly software allowing to build high quality static websites for teaching and research. It allows to make arguments through complex hypertextual structures, and to harness the richness of an enquiry's work by featuring bibliographic references, images, tables, videos, and interactive elements.
+
+### Péritext (2013-2019)
+
+Peritext est un projet expérimental, à code ouvert et en license libre initié par Robin de Mourat dans le contexte d’une recherche doctorale en arts & design
+
+### Editoria.pub
+
+https://editoria.pub
+
+### PubPub
+
+https://www.pubpub.org
+
+> The open-source, community-led, end-to-end publishing platform for knowledge communities.
+
+## CMS orientés publication
+
+### Scalar
+
+https://scalar.me
+
+> Scalar is a free, [open source](http://github.com/anvc/scalar) authoring and publishing platform that’s designed to make it easy for authors to write long-form, born-digital scholarship online. Scalar enables users to assemble [media](http://scalar.me/anvc/features/media-support/) from multiple [sources](http://scalar.me/anvc/features/archive-partners/) and juxtapose them with their own writing in a variety of ways, with minimal technical expertise required.

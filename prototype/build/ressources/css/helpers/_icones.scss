@@ -1,0 +1,72 @@
+@charset "UTF-8";
+/* ==========================================================================
+   >>ICONES
+   ========================================================================== */
+[class^="icon-"],
+[class*=" icon-"] {
+	@include icomoon;
+}
+
+.icon-search:before {
+	content: "\e910";
+}
+.icon-zoom_in:before {
+	content: "\e911";
+}
+.icon-zoom_out:before {
+	content: "\e912";
+}
+.icon-check:before {
+	content: "\e913";
+}
+.icon-aa:before {
+	content: "\e914";
+}
+.icon-add:before {
+	content: "\e900";
+}
+.icon-clear:before {
+	content: "\e901";
+}
+.icon-remove:before {
+	content: "\e902";
+}
+.icon-insert_comment:before {
+	content: "\e903";
+}
+.icon-vertical_align_bottom:before {
+	content: "\e904";
+}
+.icon-keyboard_return:before {
+	content: "\e905";
+}
+.icon-rotate_left:before {
+	content: "\e906";
+}
+.icon-arrow_back:before {
+	content: "\e907";
+}
+.icon-arrow_forward:before {
+	content: "\e908";
+}
+// .icon-check:before {
+// 	content: "\e909";
+// }
+.icon-menu:before {
+	content: "\e90a";
+}
+.icon-refresh:before {
+	content: "\e90b";
+}
+.icon-info:before {
+	content: "\e90c";
+}
+// .icon-search:before {
+// 	content: "\e90d";
+// }
+// .icon-zoom_in:before {
+// 	content: "\e90e";
+// }
+// .icon-zoom_out:before {
+// 	content: "\e90f";
+// }

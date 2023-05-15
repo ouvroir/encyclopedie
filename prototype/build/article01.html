@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Encyclopédie des nouveaux usages des collections dans les musées d’art | Test d’article</title>
+        <meta name="description" content="Description de la page">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="format-detection" content="telephone=no">
+
+        <link rel="stylesheet" href="style.css?v=20221128">
+
+        <!-- Google analytics ou autres outils d'analytics -->
+
+        <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+        <link rel="manifest" href="img/favicon/site.webmanifest">
+        <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#555555">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="theme-color" content="#ffffff">
+    </head>
+
+    <body>
+    	<header id="header" class="header" role="banner">
+            <p class="header_logo f1-18"><a href="index.html" rel="home">Des nouveaux usages des collections dans les musées d’art</a></p>
+            <p class="header_btn header_btn-nav f1-17"><button class="js-nav-open" type="button" aria-haspopup="true" aria-controls="primaryNav" aria-expanded="false"><span class="icon-menu"></span><span>Menu</span></button></p>
+            <nav id="primaryNav" class="header_nav nav" role="menu" aria-labelledby="primaryNavTitle">
+                <div class="nav_inner">
+                    <p id="primaryNavTitle" class="nav_title f1-17">Menu</p>
+                    <p class="nav_close"><button class="js-nav-close" type="button"><span class="icon-clear"></span><span class="srOnly">Fermer le menu</span></button></p>
+                    <ul class="nav_list f2-90">
+                        <li role="none"><a role="menuitem" href="actualites.php">Rubriques</a></li>
+                        <li role="none"><a role="menuitem" href="edition.php">Parcours</a></li>
+                        <li role="none"><a role="menuitem" href="lien-page.php">Index</a></li>
+                        <li role="none"><a role="menuitem" href="lien-page.php">Bibliographie</a></li>
+                        <li role="none"><a role="menuitem" href="lien-page.php">À Propos</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <p class="header_btn header_btn-settings f1-17"><button class="js-panel-toggle" type="button" aria-haspopup="dialog" aria-controls="settingsModal" aria-expanded="false"><span class="icon-aa"></span><span class="srOnly">Ouvrir les réglages d’accessibilité</span></button></p>
+            <p class="header_btn header_btn-search f1-17"><button class="js-panel-toggle" type="button" aria-haspopup="dialog" aria-controls="searchModal" aria-expanded="false"><span class="icon-search"></span><span class="srOnly">Ouvrir la recherche</span></button></p>
+            <div id="settingsModal" role="dialog" aria-modal="true" aria-labelledby="settingsModalTitle" class="header_panel header_panel-settings settings" aria-hidden="true">
+                <button class="srOnly js-panel-close">Fermer les réglages d’accessibilité</button>
+                <p id="settingsModalTitle" class="srOnly">Réglages d’accessibilité</p>
+                <div class="settings_row">
+                    <div class="settings_group" role="group" aria-label="Adjuster la taille de texte">
+                        <span class="settings_label f1-17" aria-hidden="true">Taille du texte</span>
+                        <button class="settings_btn settings_btn-round js-settings-size-dec" type="button"><span class="icon-remove"></span><span class="srOnly">Diminuer la taille du texte</span></button>
+                        <button class="settings_btn settings_btn-round js-settings-size-inc" type="button"><span class="icon-add"></span><span class="srOnly">Augmenter la taille du texte</span></button>
+                    </div>
+                </div>
+                <div class="settings_row">
+                    <fieldset class="settings_group">
+                        <legend class="srOnly">Sélectionner le thème des couleurs pour la lecture</legend>
+                        <span class="settings_label f1-17" aria-hidden="true">Thème</span>
+                        <label class="settings_btn settings_btn-check">
+                            <input name="color-theme-radios" type="radio" value="light" checked><span class="icon-check"></span><span class="srOnly">Clair</span>
+                        </label>
+                        <label class="settings_btn settings_btn-dark settings_btn-check">
+                            <input name="color-theme-radios" type="radio" value="dark"><span class="icon-check"></span><span class="srOnly">Foncé</span>
+                        </label>
+                    </fieldset>
+                </div>
+                <div class="settings_row settings_row-dark">
+                    <button class="settings_group settings_group-btn f1-17 js-settings-reset" type="button"><span class="icon-refresh"></span> <span>Retour aux réglages par défaut</span></button>
+                </div>
+            </div>
+            <div id="searchModal" role="dialog" aria-modal="true" aria-labelledby="searchModalTitle" class="header_panel header_panel-search search" aria-hidden="true">
+                <button class="srOnly js-panel-close">Fermer la recherche</button>
+                <p id="searchModalTitle" class="srOnly">Recherche</p>
+                <div class="search_inner">
+                    <form role="search" class="search_form f1-18">
+                        <label for="search-query" class="srOnly">Entrer votre recherche</label>
+                        <input type="text" id="search-query" placeholder="Rechercher ...." value="" required>
+                        <button type="submit"><span class="icon-search"></span><span class="srOnly">Rechercher</span></button>
+                    </form>
+                    <div class="search_results"></div>
+                </div>
+            </div>
+        </header>
+
+        <main id="main" class="main" role="main">
+         <section class="front">
+            <article>
+               <p>Le titre de l’ouvrage que Ledoux publie en 1804, deux ans avant sa mort, justifie
+                  à lui seul l’intérêt qu’on pourrait lui porter dans le cadre d’un volume sur la science
+                  des mœurs. Il annonce un vaste programme, qui devait à l’origine se déployer en cinq
+                  volumes dont seul le premier fut achevé, et réunir l’ensemble de l’œuvre construit
+                  et gravé de Ledoux enveloppé d’un texte au souffle étonnant. Assumé par un artiste
+                  total surplombant les hommes et les temps, et adressé aux générations à venir, le
+                  propos est porté par un «&nbsp;style figuré&nbsp;», presque entièrement métaphorique et allégorique,
+                  qui traduit avant tout la haute idée que l’auteur se fait des pouvoirs de l’architecte
+                  en matière de réforme sociale et morale.</p>
+            </article>
+            <article>
+               <p>L’auteur tient à remercier...</p>
+            </article>
+         </section>
+         <section class="body">
+            <div class="epigraph">
+               <blockquote>C’est alors que la connaissance de l’homme est plus nécessaire que celle de l’art.<a class="noteCall" href="note01" id="bn">1</a></blockquote>
+               <div class="bibl">Claude-Nicolas Ledoux</div>
+            </div>
+            <article>
+               <p><em class="title">L’Architecture sous le rapport de l’art, des mœurs et de la législation</em>. Le titre de l’ouvrage que Ledoux publie en 1804, deux ans avant sa mort, justifie
+                  à lui seul l’intérêt qu’on pourrait lui porter dans le cadre d’un volume sur la science
+                  des mœurs. Un tel titre annonce un vaste programme, qui devait à l’origine se déployer
+                  en cinq volumes dont seul le premier fut achevé, et réunir l’ensemble de l’œuvre construit
+                  et gravé de Ledoux —&nbsp;soit plusieurs centaines de planches&nbsp;— enveloppé d’un texte au
+                  souffle étonnant. Assumé par un artiste total surplombant les hommes et les temps,
+                  et adressé aux générations à venir, le propos est porté par un «&nbsp;style figuré&nbsp;» (14),
+                  presque entièrement métaphorique et allégorique, qui traduit avant tout la haute idée
+                  que l’auteur se fait des pouvoirs de l’architecte en matière de réforme sociale et
+                  morale. Le premier volume est consacré au projet de la ville de Chaux&nbsp;: autour de
+                  la Saline Royale, que Ledoux construit en Franche-Comté à partir de 1773, il conçoit
+                  une série d’édifices publics, resserrés dans un premier cercle central, ainsi qu’un
+                  vaste programme d’édifices civiques, économiques, ou domestiques, dispersés dans la
+                  ville-paysage de la campagne comtoise.</p>
+               <p>Ce vaste projet d’urbanisme, qui, précisons-le au passage, n’a rien d’utopique (puisque
+                  l’ensemble, ou du moins les grands principes du programme avaient été approuvés par
+                  l’administration royale, et devaient être construits —&nbsp;on y renonça pour des raisons
+                  financières puis politiques<a class="noteCall" href="note02" id="bn">2</a>), porte en lui-même l’ambition d’une régénération des mœurs, par la création, dans
+                  l’enceinte de la ville idéale de Chaux, d’un système social harmonieux. Dans ce contexte,
+                  on comprend aisément que l’architecte en vienne à tenir un discours moral (sur les
+                  mœurs, sur l’homme, sur le bonheur), aux côtés de bien d’autres disciplines et champs
+                  du savoir, d’ailleurs. Car, et c’est là ce qui fait l’originalité profonde du livre
+                  de Ledoux, la figure de l’architecte y atteint une telle universalité, qu’elle embrasse
+                  la totalité des sphères de l’existence humaine&nbsp;: «&nbsp;Tout est de son ressort [de l’architecte],
+                  politique, morale, législation, culte, gouvernement.&nbsp;» (15). </p>
+               <blockquote>
+                  <p>Est-il quelque chose qui lui soit étranger&nbsp;? Cet art qui rassemble toutes les connaissances,
+                     n’est-il pas lié par des attractions sensibles, à l’administration générale, à la
+                     politique des cours, aux mœurs publiques et particulières, aux sciences, à la littérature,
+                     à l’économie rurale, au commerce&nbsp;? (17)</p>
+               </blockquote>
+               <p>C’est de cette dernière citation que nous voudrions tirer et notre problématique et
+                  les étapes de notre cheminement. Si la question des mœurs n’est pas <em class="soCalled">étrangère</em> à l’architecte&nbsp;; si (pour le dire positivement) il est, en vertu même de son art,
+                  forcément investi d’un savoir sur les mœurs, voire versé dans une science des mœurs,
+                  on pourra se demander de quelle nature est précisément ce savoir, et sous quelles
+                  formes littéraires (puisque l’architecte est aussi écrivain) il se trouve exploité.</p>
+               <p>On épousera, pour répondre, la distinction opérée par Ledoux lui-même, entre mœurs
+                  <em class="emph">publiques</em> et mœurs <em class="emph">particulières</em> —&nbsp;en les prenant à rebours. Une distinction pertinente parce que les échelles qu’elle
+                  établit renvoient, on va le voir, sous la plume de Ledoux, à des régimes éthiques
+                  différents, qui s’incarnent dans deux postures complémentaires&nbsp;: la posture du moraliste
+                  d’une part (qui opère à l’échelle de la maison individuelle), et celle du législateur
+                  d’autre part (qui s’exerce à l’échelle urbaine et politique de la cité). Ces deux
+                  façons d’envisager la chose morale mobilisent, à chaque fois des formes et des traditions
+                  littéraires distinctes, voire concurrentes et contradictoires. Enfin, à ces deux figures,
+                  on en ajoutera, pour conclure, une troisième —&nbsp;dont on réserve jusque-là l’identité.</p>
+            </article>
+            <article>
+               <h1>Les «&nbsp;mœurs particulières&nbsp;» ou l’architecte en moraliste</h1>
+               <p>L’une des principales révolutions qu’apporte Ledoux, sur le plan architectural, c’est
+                  la rupture avec la longue tradition académique de l’architecture à la française, qui
+                  articulait les formes architecturales, en particulier l’ordonnance des façades, aux
+                  hiérarchies de la société d’ordre. L’architecture avait pour mission, plus ou moins
+                  stricte, de rendre lisible l’ordre social. Et donc de contribuer à son maintien symbolique
+                  via notamment la notion de <em class="soCalled">convenance</em>, rendue fondamentale au milieu du siècle par le plus grand théoricien de l’architecture
+                  à la française, Jacques-François Blondel, qui fut aussi le professeur du jeune Ledoux.
+                  Blondel rappelle que la convenance, sans laquelle il n’y a pas d’architecture, consiste
+                  à «&nbsp;assigner à chaque édifice le véritable caractère qui lui convient<a class="noteCall" href="note03" id="bn">3</a>&nbsp;».</p>
+               <blockquote>
+                  <p>Toutes les différentes espèces de productions qui dépendent de l’Architecture devant
+                     porter l’empreinte de la destination particulière de chaque édifice, tous doivent
+                     avoir un caractère qui détermine leur forme générale et qui annonce le bâtiment pour
+                     ce qu’il est.<a class="noteCall" href="note04" id="bn">4</a></p>
+               </blockquote>
+               <p>La théorie de la convenance ainsi entendue était inséparable de celle des ordres d’architecture,
+                  ce système de proportions (qui distinguait le toscan, le dorique, l’ionique, le corinthien
+                  et le composite), matière quasi exclusive des théories du beau architectural à l’âge
+                  classique, que les traités, depuis Vitruve jusqu’à Blondel, en passant par Vignole,
+                  Scamozzi et Palladio, ne cessaient de fixer, refixer et redéfinir encore. L’emploi
+                  gradué des ordres (aussi bien que leur non-emploi) offrait une grille qui permettait
+                  d’indexer le langage architectural sur l’existence morale, politique et sociale. Or,
+                  c’est cette grille, ce «&nbsp;pentamètre de l’école&nbsp;» qui restreint le «&nbsp;génie&nbsp;» (108)
+                  que Ledoux, qui la juge trop rigide et stérile, va faire littéralement sauter —&nbsp;libérant
+                  ainsi les formes architecturales pour les adapter, avec des possibilités désormais
+                  infinies, à chaque site et situation particulière. Chaque condition, donc&nbsp;: du prince
+                  au marchand&nbsp;; du grand seigneur à l’ouvrier. Mais aussi, dans un délié plus fin encore,
+                  chaque propriétaire singulier, chaque personnalité propre. La destination du bâtiment
+                  est traduite par le <em class="soCalled">caractère</em>, toujours différent, de l’édifice. Sans revenir ici sur l’histoire si riche de cette
+                  notion de caractère dans la théorie architecturale et son cheminement complexe d’une
+                  discipline à l’autre —&nbsp;un itinéraire qu’a si bien dégagé Werner Szambien<a class="noteCall" href="note05" id="bn">5</a>&nbsp;—, qu’il nous suffise de remarquer combien le terme et le concept marquent un point
+                  où la théorie du bâti croise la science morale.</p>
+               <blockquote>
+                  <p>Ici, ce n’est pas l’Architecture qui forme l’Architecte, c’est l’Architecte qui puise
+                     dans le grand livre des passions la variété de ses sujets. Ne croirait-on pas qu’elles
+                     se courbent devant lui pour lui découvrir le vaste horizon qui se confond avec les
+                     derniers cercles du monde&nbsp;? En effet, la disparité des caractères nécessite des distributions
+                     et des décorations dissemblables (86).</p>
+               </blockquote>
+               <p>Avec le caractère, par une sorte de court-circuit, les solutions architecturales de
+                  Ledoux s’arrachent des traditions de l’École pour venir se brancher directement sur
+                  les mœurs, l’existence sociale vivante, dégagée du carcan des ordres et des ordonnances.
+                  Et c’est là une avancée considérable du point de vue de la théorie architecturale.
+                  Or, chose étonnante, quand il s’agit du point de vue moral cette fois-ci, Ledoux exploite
+                  la notion de caractère d’une façon relativement conservatrice, du moins en l’inscrivant
+                  fortement dans une tradition morale et littéraire sans grand rapport avec ce qu’est
+                  en train d’inventer, à l’époque, la physiognomonie de Lavater, qui publie son traité
+                  en 1797<a class="noteCall" href="note06" id="bn">6</a>&nbsp;; ni avec une approche anthropologique des formes architecturales, qui commence à
+                  se développer avec Quatremère de Quincy<a class="noteCall" href="note07" id="bn">7</a>. Car chez Ledoux, le <em class="soCalled">caractère</em> renvoie aussi, comme composante du jeu de l’écrivain (et non plus seulement de l’architecte),
+                  à l’approche satirique et moraliste du Grand Siècle, en écho à toute une littérature
+                  placée sous la tutelle de Théophraste, et qui culmine avec La Bruyère, qui résorbait
+                  les mœurs dans le procédé, moral et littéraire, du caractère<a class="noteCall" href="note08" id="bn">8</a>.</p>
+               <p>Car c’est bien cette posture, parmi d’autres, qu’emprunte l’architecte, notamment
+                  pour mettre en scène son rapport au client, dans certaines commandes de maisons particulières.
+                  Il enveloppe alors l’exposé du programme architectural d’une anecdote morale, qui
+                  tient tantôt de la fable, tantôt de l’allégorie, tantôt de la caricature satirique
+                  ou de la maxime.</p>
+               <p>Un seul exemple, cette maison de campagne commandée par un père de famille pour y
+                  loger avec ses trois enfants. </p>
+               <p>Chacun souffre d’un vice prononcé : narcissisme et misanthropie pour les deux fils&nbsp;;
+                  aigreur du célibat pour la jeune fille. Quant au père, il est avare. Ainsi, le programme
+                  et jusqu’au plan de la maison sont présentés comme le produit non pas tant de considérations
+                  pratiques (qui s’attacheraient aux modes de vie, aux usages…), mais plutôt d’une réflexion
+                  morale.</p>
+               <blockquote>
+                  <p>Pour corriger les hommes par l’exemple, il faut connaître leurs vices et leurs vertus
+                     : il faut caresser les unes, pour faire adorer les autres. Le père était avare&nbsp;; l’idée
+                     d’une grande maison l’effraie&nbsp;; le présumé de la dépense travaille ses esprits inquiets.
+                     Utile occasion, c’est donc toi qui vas détrôner l’erreur, en flattant une passion
+                     avilissante. [...]</p>
+                  <p>Que faire&nbsp;? L’Architecte embrasse les genoux de Minerve, fait sa prière&nbsp;; il est écouté&nbsp;;
+                     il est inspiré. Semblable à nos modernes Esculapes, il tâte la veine qui porte le
+                     sang du cœur aux extrémités, la consulte avant d’administrer le remède. Eh quoi&nbsp;!
+                     faut-il se séparer pour toujours, quand un innocent stratagème peut consolider les
+                     nœuds resserrés par la nature&nbsp;? [...]</p>
+                  <p>On propose quatre petites maisons, où l’on puisse communiquer par des galeries couvertes,
+                     se rassembler&nbsp;: le père accueille le projet qui diminue la dépense journalière, et
+                     la fait supporter à chacun dans son isolement.</p>
+                  <p>On propose la distribution, on discute&nbsp;; on l’adopte. (98-99)</p>
+               </blockquote>
+               <p>L’édifice est conçu comme un remède moral administré par un médecin des âmes. Non
+                  sans ambiguïté, puisque à bien y regarder, si l’erreur est «&nbsp;détrônée&nbsp;» (l’avare va
+                  finalement faire construire), le vice n’est en rien corrigé mais il est bien flatté,
+                  caressé… détourné et canalisé au profit de l’architecte, qui en tire parti.</p>
+               <p>Ledoux a sans doute conscience des limites de ce procédé qui transfigure l’histoire
+                  d’une commande en une vignette morale et satirique, puisqu’à propos de la construction
+                  d’une caisse d’escompte, dans un contexte où la question du vice s’articule au champ
+                  économique, avec des conséquences incalculables, tant le sort des peuples dépend de
+                  la cupidité ou de la probité du banquier, il précise&nbsp;:</p>
+               <blockquote>
+                  <p>Nota&nbsp;: Le but de ce chapitre est de puiser la variété dans les différents caractères.
+                     En opposant des monstres d’iniquité aux hommes probes, on paraît exagéré, j’en conviens.
+                     (176)</p>
+               </blockquote>
+               <p>Et Ledoux d’invoquer, pour sa justification, les élans de son imagination. Sans doute
+                  l’architecte-moraliste se sent-il parfois à l’étroit dans les oripeaux du Grand Siècle.
+                  C’est en dépassant cette échelle du bâti individuel pour s’élever au projet global
+                  de la ville de Chaux, qui offre la véritable mesure de la réforme des mœurs, que Ledoux
+                  endosse l’habit d’une seconde figure&nbsp;: celle du philosophe législateur.</p>
+            </article>
+            <article>
+               <h1>Les <em class="soCalled">mœurs publiques</em>&nbsp;: l’architecte en législateur</h1>
+               <p>Que l’architecture, entendue comme projet d’urbanisme global —&nbsp;ce que le siècle appelait
+                  les «&nbsp;Embellissements&nbsp;» et que Ledoux appelle dans une formulation absolue, <em class="soCalled">l’Art</em>&nbsp;— que l’art, donc, soit le véhicule privilégié, si ce n’est exclusif de la réforme
+                  des mœurs, c’est une vérité que Ledoux martèle à chaque page.</p>
+               <p>Et cette vérité s’illustre à tous les niveaux de lecture. À commencer par le plus
+                  évident, le programme édilitaire lui-même, c’est-à-dire la nature et la destination
+                  des monuments de la ville de Chaux, dont une grande partie est dédiée à la célébration,
+                  la pratique ou l’éducation de la vertu. Ainsi l’église de Chaux, dont Ledoux veut
+                  faire un lieu de festivités universelles, est largement concurrencée (ou complétée)
+                  par une série d’autres monuments laïques&nbsp;: le Pacifère (un monument à la conciliation
+                  [fig. 2])&nbsp;; le Panarétheon [fig. 3], temple de la sagesse dont le programme sculpté
+                  «&nbsp;met en action la saine morale pour vous apprendre à repousser les passions désastreuses,
+                  à vous garantir des voluptés corruptrices&nbsp;» (184)&nbsp;; l’édifice destiné aux récréations<a class="noteCall" href="note09" id="bn">9</a> —&nbsp;qui devient sous nos yeux le théâtre d’une fête toute rousseauiste où la vertu
+                  s’éprouve par le pur attachement des liens affectifs&nbsp;; ou encore la Cénobie [fig.
+                  4], version laïque du couvent et précurseur du familistère. </p>
+               <p>Mais, je voudrais m’arrêter sur un passage qui, à la faveur d’une analogie, exprime
+                  un lien plus essentiel encore entre l’entreprise architecturale, entendue comme <em class="soCalled">action civilisatrice</em>, et l’entreprise d’élaboration d’une morale&nbsp;:
+                  «&nbsp;
+                  <p>Ignorez-vous ce qu’il en coûte à ceux qui osent changer la masse des idées reçues&nbsp;?
+                     le croiriez-vous&nbsp;? On couvre de ridicule celui qui, le premier, décida la mère à allaiter
+                     son fils&nbsp;; cette loi gravée dans tous les cœurs, est reléguée dans les campagnes&nbsp;;
+                     et si on dérobe à la ville quelques moments aux plaisirs tumultueux, ce n’est que
+                     pour suivre le ton du jour, ce n’est que pour promener l’appareil imposant de la maternité
+                     entourée du respect public.</p>
+                  <p>Rarement on est guidé par le sentiment impulsif qui honore l’humanité. On refuse les
+                     honneurs de la sépulture au plus beau génie du siècle parce qu’il a dépouillé la morale
+                     des langes superstitieux qui l’enveloppent&nbsp;; on livre à la persécution celui qui a
+                     desséché les marais de la plus grande cité de la France. Il établit des pentes préservatrices
+                     de la putréfaction&nbsp;; il ouvre des communications commerciales, des promenades parées
+                     de tous les accessoires qui contribuent à égayer la vue et à augmenter les revenus
+                     publics. Quelle est sa récompense&nbsp;? On lui ravit sa fortune&nbsp;; ses affections les plus
+                     chères succombent sous le poids des injustices. Pour combler la mesure des maux, qu’obtient-il&nbsp;?
+                     la permission de vivre. (71)</p>&nbsp;»</p>
+               <p>On note l’équivalence construite entre le génie entravé de l’architecte qui a réalisé
+                  l’ambitieux projet des barrières de Paris (cette soixantaine de postes de douanes,
+                  aux formes audacieuses, que Ledoux considérait comme sa plus grande œuvre) et celui
+                  des deux philosophes, adversaires ici réconciliés dans ce qui est déjà un bilan synthétique
+                  des Lumières : Rousseau, d’abord, qui ramena, dans les premières pages de l’<em class="title">Émile</em> et dès les premiers moments de la vie du nourrisson, les mœurs à la nature&nbsp;; Voltaire
+                  ensuite, qu’on peut reconnaître dans l’allusion aux circonstances polémiques de ses
+                  obsèques, refusées à Saint-Sulpice. La double tutelle, plutôt contradictoire, de Rousseau
+                  et de Voltaire aurait de quoi étonner. À dire vrai, elle doit tout autant à la construction
+                  d’un <mark class="lang">ethos</mark> du génie méprisé (motif récurrent de l’ouvrage) qu’à des considérations véritablement
+                  philosophiques. Quoi qu’il en soit, à l’échelle extrêmement vaste et élevée où opère
+                  le génie de l’architecte, le discours moral n’a aucun mal à se réclamer à la fois
+                  de Rousseau —&nbsp;Ledoux martèle que les principes de l’art sont à retrouver, au-delà
+                  des habitudes dégradées par le vice et l’erreur, dans la nature&nbsp;— et de Voltaire,
+                  dont le combat, ici réduit à ce que serait sa mission la plus essentielle, à savoir
+                  le combat philosophique pour une laïcisation de l’éthique (Ledoux a sans doute ici
+                  en vue le <em class="title">Catéchisme de l’honnête homme</em>) trouve un écho dans le combat édilitaire, notamment dans l’action pour la salubrité
+                  des villes et la libération des flux (économiques, physiques et humains). Combat philosophique
+                  et combat <em class="soCalled">édilitaire</em>&nbsp;: ce sont là deux aspects d’une seule et même entreprise civilisatrice, celle des
+                  Lumières, que le Patriarche Voltaire envisageait d’ailleurs déjà ensemble, à plus
+                  petite échelle, dans son domaine de Ferney. «&nbsp;Éclairez le monde, et desséchez les
+                  marais, il n’y aura que les grenouilles qui auront à se plaindre&nbsp;», écrivait-il en
+                  1759, au cœur d’une campagne de travaux d’aménagement du site de Ferney.</p>
+               <p>À Ferney, Voltaire disait travailler à <em class="soCalled">fonder Carthage</em>, la Carthage philosophique s’entend, après avoir <em class="emph">écrasé</em> l’ancienne, la Carthage de l’Infâme. <em class="emph">Fonder</em> une ville (Carthage-Ferney ou la ville de Chaux)&nbsp;: voilà qui donne à voir très concrètement
+                  le programme des Lumières, dans toute sa positivité et sa fécondité —&nbsp;magnifique réponse
+                  aux accusations des partisans des anti-Lumières, qui reprochent aux philosophes d’en
+                  rester à une critique stérile qui détruit sans <em class="emph">fonder</em>. C’est justement là l’un des principaux problèmes des débats sur la morale. Une fois
+                  déconnectée du christianisme, sur quoi <em class="emph">fonder</em> l’éthique&nbsp;? À sa manière et sur le terrain concret d’un site, d’une ville, la «&nbsp;ville
+                  naissante&nbsp;» de Chaux (127), ville «&nbsp;que la philosophie fonda&nbsp;» (126), l’architecte
+                  des Lumières donne une réponse au débat sur la morale, et, comme certains prouvaient
+                  le mouvement en marchant, il prouve l’éthique en construisant.</p>
+            </article>
+            <article>
+               <h1>La police des mœurs&nbsp;: l’architecte en surveillant</h1>
+               <p>En guise de conclusion, j’introduirais, un troisième régime moral – qui se construit
+                  loin des bruyants et universels accents de l’éloquence du génie, loin du discours
+                  moral de l’artiste écrivain, mais qui se déploie au contraire dans ce que l’architecture
+                  a de plus propre, dans le silence de l’espace et de sa conception, dans le détail
+                  des distributions, au creux minutieux des organisations de pièces et des circulations…
+                  autrement dit dans la <em class="soCalled">surveillance</em> des mœurs, qui, comme l’avait montré Michel Foucault, prend la forme d’une <em class="soCalled">discipline</em> (spatiale, ici) des corps, en garantissant, notamment, leur visibilité permanente<a class="noteCall" href="note13" id="bn">10</a>.</p>
+               <p>Voici, par exemple, l’Hospice, aux lisières de la ville, qui, transforme le principe
+                  d’accueil et l’abri, en sélection et rétention des nouveaux arrivants. Voici encore
+                  la maison d’éducation<a class="noteCall" href="note15" id="bn">11</a>, où la garantie des mœurs est très clairement l’affaire du crayon de l’architecte&nbsp;:
+                  «&nbsp;il favorisera par des lignes non interrompues, la surveillance qui assure les mœurs&nbsp;»
+                  (204). Ledoux fait ici allusion aux ouvertures, et en particulier aux galeries autour
+                  de la chapelle qui permettent d’embrasser l’ensemble des ailes. Voici enfin l’usine,
+                  la Saline Royale de Chaux, où la vie et le travail de l’ouvrier se déploient en arc
+                  de cercle, autour de l’œil de la maison du Directeur vers lequel toutes les lignes
+                  convergent, dans une sorte d’anticipation simplifiée du dispositif panoptique de Bentham.</p>
+               <p>D’une manière générale, la science des mœurs de Ledoux n’est pas une science qui passe
+                  par la conceptualisation, ni même par le développement du discours. C’est une science
+                  de la plume double&nbsp;: celle de l’écrivain moraliste, qui exploite les vices dans un
+                  jeu d’écho littéraire&nbsp;; celle du dessinateur surtout, qui trace et dispose les espaces
+                  pour organiser la pratique des corps. Car ce sont ces pratiques, dictées par ces lignes,
+                  bien plus que le traitement monumental de la vertu dans le programme édilitaire, qui
+                  forgent les nouvelles mœurs, les usages réformés, les «&nbsp;nouvelles <em class="emph">habitudes</em><a class="noteCall" href="note17" id="bn">12</a>&nbsp;» —&nbsp;jusque dans les activités les plus anodines. Ainsi, dans l’explication du «&nbsp;Plan
+                  général de la Saline tel qu’il est exécuté&nbsp;», Ledoux, qui détaille ici la disposition
+                  rayonnante du site autour de la maison du directeur, attribue très clairement la victoire
+                  sur le vice, en l’occurrence la paresse (la «&nbsp;léthargie&nbsp;»), et l’incitation au travail,
+                  à la disposition spatiale du site&nbsp;:«&nbsp;
+                  <p>L’homme compromet ses facultés dans la léthargie des sens qui les absorbe. Semblable
+                     à ce tyran d’Héraclée, il dort d’un sommeil si profond que pour l’éveiller il faut
+                     lui enfoncer des aiguilles dans les chairs. Rien ne peut la garantir des vices que
+                     le temps accumule&nbsp;; la précaution, ce sentiment inquiet qui éveille la prudence, si
+                     elle est mal dirigée ne peut assurer l’avenir contre les dangers qui le menacent.
+                     Ici le présent transige avec les siècles&nbsp;: placé au centre des rayons, rien n’échappe
+                     à la surveillance, elle a cent yeux ouverts quand cent autres sommeillent, et ses
+                     ardentes prunelles éclairent sans relâche la nuit inquiette. (77)</p>&nbsp;»</p>
+               <p>S’il y a ici une science des mœurs, c’est celle qui consiste à organiser et distribuer
+                  les pratiques et les <em class="soCalled">habitus</em>, à assurer leur contrôle. Aussi, la voix et le discours le cèdent-ils à l’œil. Cet
+                  œil, bien connu, qui embrasse la salle du théâtre de Besançon<a class="noteCall" href="note18" id="bn">13</a>. Le rayon lumineux qui le traverse, sans qu’on sache s’il en procède ou s’il s’y
+                  réfléchit, évoque bien sûr l’organe du savoir et de la connaissance – l’organe de
+                  la science. Mais cet œil (et cette science) semble bien étranger à <em class="soCalled">l’observateur</em>, figure qui émerge au siècle des Lumières et préfigure timidement, du journaliste
+                  au voyageur, de Mercier à Rétif, le sociologue ou l’anthropologue urbain des XIX<sup>e</sup> puis XX<sup>e</sup> siècles. Si l’œil de Ledoux est étranger à cette démarche de l’observation empirique
+                  des mœurs, c’est non seulement parce que sa position inspirée lui confère une portée
+                  maçonnique et divine, mais aussi parce qu’observer, ici, c’est avant tout surveiller.
+                  Sans tomber dans la caricature de dystopie carcérale que certaines lectures hâtives
+                  pourraient développer, il reste évident que la thématique de la surveillance des mœurs,
+                  sublimée ici dans cette «&nbsp;prunelle pénétrante qui veille sur tout&nbsp;» (81), joue un
+                  rôle fondamental dans l’approche des mœurs par l’architecte, sans doute au détriment
+                  de leur étude. Mais au fond, si la question de la réforme des mœurs justifiait que
+                  l’architecte développe un discours de savoir sur les mœurs, celle de la surveillance
+                  semble le ramener, peut-être malgré lui (comme s’il devait en rabattre de ses ambitions
+                  d’écrivain et de philosophe) au champ qui lui est le plus fondamental&nbsp;: celui du trait,
+                  du dessin, de l’espace.</p>
+            </article>
+         </section>
+         <section class="back">
+            <article>
+               <div class="notes" id="note01"><a href="#bnnote01">2.&nbsp;</a><p>Claude-Nicolas Ledoux, <em class="title">L’Architecture considérée sous le rapport de l’art, des mœurs et de la législation</em>, Paris, Perroneau, 1804, p. 22. Les citations dont la pagination sera désormais indiquée
+                     dans le corps du texte, sont toutes empruntées à cette édition originale.</p>
+               </div>
+               <div class="notes" id="note02"><a href="#bnnote02">3.&nbsp;</a><p>Sur la Saline Royale, sa genèse, son chantier, ses enjeux, voir&nbsp;: Massounie, Dominique,
+                     <em class="title">La saline royale de Claude Nicolas Ledoux&nbsp;: Arc-et-Senans</em>, Paris, Éditions du Patrimoine, Centre des monuments nationaux, 2016.</p>
+               </div>
+               <div class="notes" id="note03"><a href="#bnnote03">4.&nbsp;</a><p> Jacques-François Blondel, <em class="title">Cours d’Architecture civile ou traité de la décoration, Distribution et Construction
+                        des bâtiments, contenant les Leçons données en 1750 et les années suivantes par J.
+                        F. Blondel, Architecte, dans son École des Arts</em>, 6 vol., Paris, Desaint, 1771, vol. 2, p. 240.</p>
+               </div>
+               <div class="notes" id="note04"><a href="#bnnote04">5.&nbsp;</a><p><mark class="lang">Ibid.</mark>, p. 229.</p>
+               </div>
+               <div class="notes" id="note05"><a href="#bnnote05">6.&nbsp;</a><p>Werner Szambien, <em class="title">Symétrie, goût, caractère&nbsp;: théorie et terminologie de l’architecture à l’âge classique
+                        (1550-1800)</em>, Paris, Picard, 1986.</p>
+               </div>
+               <div class="notes" id="note06"><a href="#bnnote06">7.&nbsp;</a><p>Johann Caspar Lavater, <em class="title">L’Art de connaître les hommes par la physionomie</em>, Meudon, P.-S.-C. Demoilly, 1797.</p>
+               </div>
+               <div class="notes" id="note07"><a href="#bnnote07">8.&nbsp;</a><p>«&nbsp;Le caractère d’architecture des différents peuples consiste dans une manière d’être,
+                     dans une conformation nécessitée par les besoins physiques et les habitudes morales,
+                     et dans laquelle se peignent les climats, les idées, les mœurs, les goûts, les plaisirs
+                     et le caractère même de chaque peuple&nbsp;». (A. C. Quatremère de Quincy, Encyclopédie
+                     méthodique – Architecture, t. I, 1788, article «&nbsp;Caractère&nbsp;», p. 492)</p>
+               </div>
+               <div class="notes" id="note08"><a href="#bnnote08">9.&nbsp;</a><p>La Bruyère, <em class="title">Les Caractères ou les Mœurs de ce siècle</em>, 1688.</p>
+               </div>
+               <div class="notes" id="note09"><a href="#bnnote09">10.&nbsp;</a><p>«&nbsp;Édifice destiné aux récréations&nbsp;», planche 85.</p>
+               </div>
+               <div class="notes" id="note10"><a href="#bnnote10">11.&nbsp;</a><p>«&nbsp;Par-tout l’homme est exaspéré, par-tout il est englué dans l’amorce trompeuse du
+                     merveilleux, et s’éloigne du sentier que lui indique la nature&nbsp;» (80).</p>
+               </div>
+               <div class="notes" id="note11"><a href="#bnnote11">12.&nbsp;</a><p>Lettre au Baron Albrecht Von Haller du 17 avril 1759, dans <em class="title">Correspondance complète</em>, éd. Besterman, Paris, Gallimard, coll. «&nbsp;Bibliothèque de la Pléiade&nbsp;», t. V, p.
+                     463.</p>
+               </div>
+               <div class="notes" id="note12"><a href="#bnnote12">13.&nbsp;</a><p>Voir, sur ces questions, Jacques Domenech, <em class="title">L’éthique des lumières &nbsp;: les fondements de la morale dans la philosophie française
+                        du XVIII<em>e</em> siècle</em>, Paris, J. Vrin, coll. «&nbsp;Bibliothèque d’histoire de la philosophie&nbsp;», 1989.</p>
+               </div>
+               <div class="notes" id="note13"><a href="#bnnote13">14.&nbsp;</a><p> Michel Foucault, <em class="title">Surveiller et punir. Naissance de la prison</em>, Paris, Gallimard, 1975.</p>
+               </div>
+               <div class="notes" id="note14"><a href="#bnnote14">15.&nbsp;</a><p>«&nbsp;L’Hospice&nbsp;», planche 11.</p>
+               </div>
+               <div class="notes" id="note15"><a href="#bnnote15">16.&nbsp;</a><p>«&nbsp;Maison éducation&nbsp;», planche 105.</p>
+               </div>
+               <div class="notes" id="note16"><a href="#bnnote16">17.&nbsp;</a><p>«&nbsp;Plan général de la Saline&nbsp;», planche 16.</p>
+               </div>
+               <div class="notes" id="note17"><a href="#bnnote17">18.&nbsp;</a><p>«&nbsp;De nouvelles habitudes, dictées par l’exemple, maintenues par des surveillants,
+                     entretiendront le corps et l’esprit dans les usages journaliers qui constituent la
+                     force et assurent la santé.&nbsp;» (81)</p>
+               </div>
+            </article>
+            <article>
+               <h1>Bibliographie</h1>
+               <div class="bibl">Blondel, Jacques-François, <em class="title">Cours d’Architecture civile ou traité de la décoration, Distribution et Construction
+                     des bâtiments, contenant les Leçons données en 1750 et les années suivantes par J.
+                     F. Blondel, Architecte, dans son École des Arts</em>, 6 vol. Paris, Desaint, 1771.</div>
+               <div class="bibl">Ledoux, Claude-Nicolas, <em class="title">L’Architecture considérée sous le rapport de l’art, des mœurs et de la législation</em>, Paris, 1804, rééd. Paris, Hermann, coll. «&nbsp;Savoirs sur l’art&nbsp;», 1997.</div>
+               <div class="bibl">Rabreau, Daniel, <em class="title">Claude-Nicolas Ledoux (1736-1806)</em>, Bordeaux, Librairie de l’architecture et de la ville, 2000.</div>
+               <div class="bibl">Vidler, Anthony, <em class="title">Claude-Nicolas Ledoux: Architecture and Social Reform at the End of the Ancien Régime</em>, Cambridge (Mass.), MIT Press, 1990.</div>
+               <div class="bibl">Vidler, Anthony, <em class="title">L’Espace des Lumières&nbsp;: Architecture et philosophie</em>, trad. Catherine Fraisse, Paris, Picard, 1995.</div>
+            </article>
+         </section>
+      </main>
+   </main>
+
+		<footer id="footer" class="footer" role="contentinfo">
+            <div class="footer_row f1-18">
+                <ul class="footer_col">
+                    <li><a href="index.php">Accueil</a></li>
+                    <li><a href="etudes.php">Rubriques</a></li>
+                    <li><a href="edition.php">Parcours</a></li>
+                    <li><a href="lien-page.php">Index</a></li>
+                    <li><a href="lien-page.php">Bibliographie</a></li>
+                    <li><a href="lien-page.php">À Propos</a></li>
+                    <li><a href="lien-page.php">Mentions légales</a></li>
+                </ul>
+                <div class="footer_col">
+                    <p class="txt-uc"><strong>Des nouveaux usages des collections dans les musées d’art</strong><br>
+                    <em>Une encyclopédie critique</em></p>
+                    <p>Publication du groupe de recherche CIÉCO,<br>
+                    Partenariat CRSH, réf. XXXX-XXXX.<br>
+                    www.nouveaux-usages-des-collections.ca</p>
+                    <!--
+                    <ul class="logos">
+                        <li><a href="http://passes-present.eu/" target="_blank"><img src="img/logo-les-passes-dans-le-present-labex.jpg" alt="Les passés dans le present"></a></li>
+                        <li><a href="https://www.gouvernement.fr/le-programme-d-investissements-d-avenir" target="_blank"><img src="img/logo-investir-avenir.png" alt="Investir l’avenir"></a></li>
+                        <li><a href="https://www.parisnanterre.fr/" target="_blank"><img src="img/logo-universite-paris-nanterre.png" alt="Université Paris Nanterre"></a></li>
+                        <li><a href="https://cslf.parisnanterre.fr/" target="_blank"><img src="img/logo-cslf.png" alt="Centre des sciences des littératures en langue française (CSLF)"></a></li>
+                        <li><a href="https://har.parisnanterre.fr/" target="_blank"><img src="img/logo-har.png" alt="Histoire des arts et des représentations (HAR)"></a></li>
+                    </ul>-->
+                </div>
+            </div>
+            <div class="footer_row footer_row-center footer_row-light f1-18">
+                <p class="footer_col op-50 c-b">Nos partenaires</p>
+                <!-- 
+                <ul class="footer_col logos">
+                    <li><a href="https://www.salineroyale.com/" target="_blank"><img src="img/logo-saline-royale-arc-et-senans.png" alt="Saline royale d’Arc-et-Senans"></a></li>
+                    <li><a href="https://madparis.fr/" target="_blank"><img src="img/logo-musee-des-arts-decoratifs.png" alt="Musée des arts décoratifs"></a></li>
+                    <li><a href="https://gren.openum.ca/" target="_blank"><img src="img/logo-gren.png" alt="Groupe de recherche sur les éditions critiques en contexte numérique (GREN)"></a></li>
+                </ul>
+               -->
+            </div>
+        </footer>
+
+        <script>
+            var apiURL = 'https://gallica.bnf.fr/iiif/';
+            var bookID = 'ark:/12148/bpt6k1047050b/';
+        </script>
+        <script src="js/production.min.js?v=20221129"></script>
+    </body>
+</html>

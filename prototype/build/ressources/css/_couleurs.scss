@@ -1,0 +1,29 @@
+//Couleurs basiques
+//=================
+$noir: #000;
+$blanc: #fff;
+
+//Couleurs principales du projet
+//==============================
+$couleur1: #F1EFED; //light bg
+$couleur2: #333333; //light text, dark bg
+$couleur3: #979797; //borders (light & dark)
+$couleur4: #F1EFED; //dark text, dark border, light bg in dark mode
+$couleur5: #DDDBDA; //borders header (light & dark), borders footer (light & dark)
+$couleur6: #F93700; //note active
+
+
+/* ==========================================================================
+   >>ROOT COLORS
+   ========================================================================== */
+:root {
+    --color-bg: #{$couleur1};
+    --color-text: #{$couleur2};
+    --color-text-rgb: 51,51,51;
+}
+
+html[data-theme-color="dark"] {
+    --color-bg: #{$couleur2};
+    --color-text: #{$couleur1};
+    --color-text-rgb: 241,239,237;
+}

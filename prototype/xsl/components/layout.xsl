@@ -10,6 +10,13 @@
             <body>
                 <xsl:call-template name="header"/>
                 <xsl:apply-templates/>
+                <xsl:call-template name="footer"/>
+            <script><![CDATA[
+    var apiURL = 'https://gallica.bnf.fr/iiif/';
+    var bookID = 'ark:/12148/bpt6k1047050b/';
+    ]]>
+            </script>
+            <script src="js/production.min.js?v=20221129"></script>
             </body>
         </html>
     </xsl:template>

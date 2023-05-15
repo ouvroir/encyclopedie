@@ -1,0 +1,82 @@
+@charset "UTF-8";
+/* ==========================================================================
+   >>Font-Face
+   ========================================================================== */
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot?78zt1o2');
+	src:url('fonts/icomoon.eot?#iefix78zt1o2') format('embedded-opentype'),
+			url('fonts/icomoon.ttf?78zt1o2') format('truetype'),
+			url('fonts/icomoon.woff?78zt1o2') format('woff'),
+			url('fonts/icomoon.svg?78zt1o2#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+}
+
+@font-face {
+	font-family: 'Le Jeune Deck Web';
+	src: url('fonts/LeJeuneDeck-RegularItalic-Web.woff2') format('woff2'),
+	url('fonts/LeJeuneDeck-RegularItalic-Web.woff') format('woff');
+	font-weight: 400;
+	font-style: italic;
+	font-stretch: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Le Jeune Deck Web';
+	src: url('fonts/LeJeuneDeck-Regular-Web.woff2') format('woff2'),
+	url('fonts/LeJeuneDeck-Regular-Web.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+	font-stretch: normal;
+	font-display: swap;
+}
+@font-face {
+    font-family: 'fondation';
+    src: url('fonts/fondation-reg.woff2') format('woff2'),
+         url('fonts/fondation-reg.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+	font-display: swap;
+}
+@font-face {
+    font-family: 'fondation';
+    src: url('fonts/fondation-it.woff2') format('woff2'),
+         url('fonts/fondation-it.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+	font-display: swap;
+}
+@font-face {
+    font-family: 'fondation';
+    src: url('fonts/fondation-bold.woff2') format('woff2'),
+         url('fonts/fondation-bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+	font-display: swap;
+}
+@font-face {
+    font-family: 'fondation';
+    src: url('fonts/fondation-bold_it.woff2') format('woff2'),
+         url('fonts/fondation-bold_it.woff') format('woff');
+    font-weight: 700;
+    font-style: italic;
+	font-display: swap;
+}
+@font-face {
+    font-family: 'roboto';
+    src: url('fonts/roboto-regular.woff2') format('woff2'),
+         url('fonts/roboto-regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+	font-display: swap;
+}
+@font-face {
+    font-family: 'roboto';
+    src: url('fonts/roboto-italic.woff2') format('woff2'),
+         url('fonts/roboto-italic.woff') format('woff');
+    font-weight: 400;
+    font-style: italic;
+	font-display: swap;
+}

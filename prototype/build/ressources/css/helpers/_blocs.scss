@@ -1,0 +1,23 @@
+@charset "UTF-8";
+/* ==========================================================================
+   >>HELPERS BLOCS
+   ========================================================================== */
+/* Cover, contain */
+.cv {
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.cv-img {
+	object-fit: cover;
+	// background-position: center center;
+	// background-repeat: no-repeat;
+	// background-size: cover;
+}
+.cv-contain {
+	object-fit: contain;
+	// background-size: contain;
+}

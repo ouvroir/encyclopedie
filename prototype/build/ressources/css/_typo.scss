@@ -1,0 +1,317 @@
+@charset "UTF-8";
+/* ==========================================================================
+   >>TYPO
+   ========================================================================== */
+/* --------------------------------------------------------------------------
+   ->mise en forme du texte
+   -------------------------------------------------------------------------- */
+/* Gras et italique */
+b, strong {
+  font-weight: 700;
+}
+i, em {
+	font-style: italic;
+}
+
+/* Indice et exposant */
+sub, sup {
+  position: relative;
+  font-size: .75em;
+  vertical-align: 0;
+}
+sup {
+  bottom: 1ex;
+}
+sub {
+  top: .5ex;
+}
+
+/* Supprimer / ajouter */
+del {
+  text-decoration: line-through;
+}
+ins {
+  text-decoration: underline;
+}
+
+
+/* --------------------------------------------------------------------------
+   ->liens
+   -------------------------------------------------------------------------- */
+a,
+button {
+  transition: color .25s, background-color .25s;
+  cursor: pointer;
+}
+
+/* Rappel : l'ordre des pseudo-classes doit être : link > visited > hover/focus > active */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+/* --------------------------------------------------------------------------
+   ->listes à puces et numérotées
+   -------------------------------------------------------------------------- */
+ul,
+ol {
+  list-style: none;
+}
+
+
+/* --------------------------------------------------------------------------
+   ->texte classique
+   -------------------------------------------------------------------------- */
+.txt {
+  h2 {
+    margin-top: em(64,40);
+    margin-bottom: em(36,40);
+    font-size: em(40,16);
+    line-height: 1.2; //48
+    font-family: $font-secondaire;
+  }
+  p {
+    margin-bottom: em(26,18);
+    font-size: em(18,16);
+    line-height: 1.4444; //26
+  }
+  table {
+    font-size: em(18,16);
+    line-height: 1.4444; //26
+  }
+  .nota {
+    margin-top: em(30,13);
+    margin-bottom: em(41,13);
+  }
+
+  a {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: .2em;
+    // @include hover {
+    //   text-decoration: none;
+    // }
+  }
+
+  [data-p-id] {
+    &:before {
+       content: attr(data-p-id);
+       position: absolute;
+       margin-left: em(-56,12);
+       margin-top: em(4,12);
+       font-size: em(12,18);
+       opacity: .5;
+    }
+  }
+  [data-p-id="1"] {
+    &:before {
+      content: "01";
+    }
+  }
+  [data-p-id="2"] {
+    &:before {
+      content: "02";
+    }
+  }
+  [data-p-id="3"] {
+    &:before {
+      content: "03";
+    }
+  }
+  [data-p-id="4"] {
+    &:before {
+      content: "04";
+    }
+  }
+  [data-p-id="5"] {
+    &:before {
+      content: "05";
+    }
+  }
+  [data-p-id="6"] {
+    &:before {
+      content: "06";
+    }
+  }
+  [data-p-id="7"] {
+    &:before {
+      content: "07";
+    }
+  }
+  [data-p-id="8"] {
+    &:before {
+      content: "08";
+    }
+  }
+  [data-p-id="9"] {
+    &:before {
+      content: "09";
+    }
+  }
+
+  [lang="el"] {
+    font-family: "roboto", "fondation", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-size: em(15,16);
+  }
+
+  h2,
+  h3,
+  p,
+  .nota {
+    &:first-child {
+      margin-top: 0;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.txt-small {
+  p {
+    margin-bottom: em(24,16);
+    font-size: em(16,16);
+    line-height: 1.5; //24
+  }
+  table {
+    font-size: em(16,16);
+    line-height: 1.5; //24
+  }
+}
+
+.txt-xs {
+  p {
+    margin-bottom: em(24,16);
+    font-size: em(14,16);
+    line-height: 1.5714; //22
+  }
+}
+
+.txt-cols {
+  column-count: 2;
+  column-gap: em($gutterW);
+  column-fill: balance;
+  p {
+     overflow: hidden;
+  }
+}
+
+.txt-mw {
+  h2,
+  p {
+    max-width: rem($maxW);
+  }
+}
+
+.txt-simple {
+  h2,
+  h3 {
+    margin-top: 0;
+    margin-bottom: em(26,18);
+    font-size: em(18,16);
+    line-height: 1.4444; //26
+    font-family: $font-default;
+    font-weight: 700;
+  }
+}
+
+.txt_pageNum {
+  display: inline-block;
+  margin-bottom: em(26,12);
+  padding: (0) em(3,12);
+  background-color: $couleur5;
+  // font-size: em(12);
+  font-size: calc(var(--text-font-size,1rem) * #{(12 / 16)});
+  line-height: 1.3333; //16
+  color: $noir;
+  p &,
+  h2 & {
+    margin-bottom: 0;
+  }
+  a {
+    text-decoration: none;
+  }
+}
+
+.nota {
+  display: block;
+  font-size: em(13);
+  line-height: 1.5385; //20
+  color: rgba(var(--color-text-rgb),.75);
+}
+.nota_label {
+  display: block;
+  color: var(--color-text);
+}
+
+.txt_plate,
+.txt-border {
+  padding-left: em(36,18);
+  position: relative;
+  &:before {
+    content: " ";
+    display: block;
+    width: em(25,18);
+    border-top: 1px solid $couleur3;
+    position: absolute;
+    top: 50%;
+    left: 0;
+  }
+}
+
+
+/* --------------------------------------------------------------------------
+   ->tailles
+   -------------------------------------------------------------------------- */
+.f1-24 { 
+  font-size: em(24,16);
+  line-height: 1.3333; //32
+}
+.f1-18 { 
+  font-size: em(18,16);
+  line-height: 1.4444; //26
+}
+.f1-17 { 
+  font-size: em(17,16);
+  line-height: 1.4118; //24
+}
+.f1-16 { 
+  font-size: em(16,16);
+  line-height: 1.25; //20
+}
+.f1-14 { 
+  font-size: em(14,16);
+  line-height: 1.5714; //22
+}
+
+.f2-90,
+.f2-40,
+.f2-36,
+.f2-24 {
+  font-family: $font-secondaire;
+}
+.f2-90 { 
+  font-size: em(90,16);
+  // font-size: (90 / 1280) * 100vw;
+  // font-size: calc(#{(90 / 1280) * 100vw} - 1rem + 1em);
+  line-height: 1.0889; //98
+}
+.f2-40 { 
+  font-size: em(40,16);
+  line-height: 1.2; //48
+}
+.f2-36 { 
+  font-size: em(36,16);
+  line-height: 1.2222; //44
+}
+.f2-24 { 
+  font-size: em(24,16);
+  line-height: 1.3333; //32
+}
+
+// @include mq(1280, "min") {
+//   .f2-90 { 
+//     font-size: em(90,16);
+//   }
+// }

@@ -1,0 +1,26 @@
+@charset "UTF-8";
+/* ==========================================================================
+   >>HELPERS
+   ========================================================================== */
+/* Clearfix */
+.cf {
+	@include clearfix;
+}
+
+/* Masquage accessible */
+/* http://hugogiraudel.com/2016/10/13/css-hide-and-seek/ */
+.srOnly {
+  @include srOnly;
+}
+.srOnly-focusable {
+  &:focus {
+    position: static;
+    width: auto!important;
+    height: auto!important;
+		clip: auto;
+		clip-path: none;
+		overflow: visible;
+    // margin: 0;
+		white-space: normal;
+  }
+}

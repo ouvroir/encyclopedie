@@ -2,26 +2,33 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="3.0" expand-text="true">
     <xsl:template name="header">
         <header id="header" class="header" role="banner">
-            <p class="header_logo f1-18"><a href="index.php" rel="home"
-                >L’ARCHITECTURE de Claude-Nicolas Ledoux</a></p>
-            <p class="header_btn header_btn-nav f1-17"><button class="js-nav-open" type="button"
-                aria-haspopup="true" aria-controls="primaryNav" aria-expanded="false"><span
-                class="icon-menu" /><span>Menu</span></button></p>
+            <p class="header_logo f1-18">
+                <a href="index.html" rel="home"
+                >Des nouveaux usages des collections dans les musées d’art</a>
+            </p>
+            <p class="header_btn header_btn-nav f1-17">
+                <button class="js-nav-open" type="button"
+                aria-haspopup="true" aria-controls="primaryNav" aria-expanded="false">
+                    <span class="icon-menu" />
+                    <span>Menu</span>
+                </button>
+            </p>
             <nav id="primaryNav" class="header_nav nav" role="menu"
                 aria-labelledby="primaryNavTitle">
                 <div class="nav_inner">
                     <p id="primaryNavTitle" class="nav_title f1-17">Menu</p>
-                    <p class="nav_close"><button class="js-nav-close" type="button"><span
-                        class="icon-clear" /><span class="srOnly">Fermer le menu</span></button></p>
+                    <p class="nav_close">
+                        <button class="js-nav-close" type="button">
+                            <span class="icon-clear" />
+                            <span class="srOnly">Fermer le menu</span>
+                        </button>
+                    </p>
                     <ul class="nav_list f2-90">
                         <li role="none">
-                            <a role="menuitem" href="actualites.php">Actualités</a>
+                            <a role="menuitem" href="actualites.php">Rubriques</a>
                         </li>
                         <li role="none">
-                            <a role="menuitem" href="etudes.php">Études ledolciennes</a>
-                        </li>
-                        <li role="none">
-                            <a role="menuitem" href="edition.php">Édition</a>
+                            <a role="menuitem" href="edition.php">Parcours</a>
                         </li>
                         <li role="none">
                             <a role="menuitem" href="lien-page.php">Index</a>
@@ -35,14 +42,22 @@
                     </ul>
                 </div>
             </nav>
-            <p class="header_btn header_btn-settings f1-17"><button class="js-panel-toggle"
+            <p class="header_btn header_btn-settings f1-17">
+                <button class="js-panel-toggle"
                 type="button" aria-haspopup="dialog" aria-controls="settingsModal"
-                aria-expanded="false"><span class="icon-aa" /><span class="srOnly"
-                >Ouvrir les réglages d’accessibilité</span></button></p>
-            <p class="header_btn header_btn-search f1-17"><button class="js-panel-toggle"
+                aria-expanded="false">
+                    <span class="icon-aa" />
+                    <span class="srOnly">Ouvrir les réglages d’accessibilité</span>
+                </button>
+            </p>
+            <p class="header_btn header_btn-search f1-17">
+                <button class="js-panel-toggle"
                 type="button" aria-haspopup="dialog" aria-controls="searchModal"
-                aria-expanded="false"><span class="icon-search" /><span class="srOnly"
-                >Ouvrir la recherche</span></button></p>
+                aria-expanded="false">
+                    <span class="icon-search" />
+                    <span class="srOnly">Ouvrir la recherche</span>
+                </button>
+            </p>
             <div id="settingsModal" role="dialog" aria-modal="true"
                 aria-labelledby="settingsModalTitle"
                 class="header_panel header_panel-settings settings" aria-hidden="true">

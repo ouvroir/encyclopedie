@@ -1,0 +1,45 @@
+//=============================================
+//Couleurs :
+//=============================================
+@import 'couleurs';
+
+//=============================================
+//Fonts :
+//=============================================
+$taille-base: 16;
+$line-height-base: 1.4444;
+$font-sans-serif: "fondation", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+$font-serif: "Le Jeune Deck Web", "Georgia", "Times New Roman", "Times", serif;
+$font-monospace: "Consolas", "DejaVu Sans Mono", "Courier", monospace;
+$font-default: $font-sans-serif;
+$font-secondaire: $font-serif;
+
+//=============================================
+//Autres :
+//=============================================
+$ratioHDPI: 1.3;
+
+$pad: 45;
+$colW: 78;
+$gutterW: 23;
+$maxW: 700;
+$nav-h: 100;
+$nav-h-375: 47;
+
+$pad-1024: 40;
+$pad-768: 20;
+$pad-375: 15;
+
+//=============================================
+//RWD :
+//=============================================
+// $nav-mobile: 1020;
+
+// $rwd-typo-1: $nav-mobile;
+// $rwd-pad-1: $rwd-typo-1;
+
+$rwd-1024: 1300;
+$rwd-768: 900;
+$rwd-375: 740;
+$nav-mobile: $rwd-375;
+$rwd-small-screens: 349;

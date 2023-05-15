@@ -1,0 +1,93 @@
+@charset "UTF-8";
+/* ==========================================================================
+   >>BASE
+   ========================================================================== */
+html {
+	width: 100%;
+	font-size: 100%; /* 16px dans la plupart des navigateurs */
+	-webkit-text-size-adjust: 100%;
+  	-ms-text-size-adjust: 100%;
+	scroll-behavior: smooth;
+	scroll-padding-top: rem($nav-h);
+	&.is-menu-open {
+		scroll-behavior: auto;
+		scroll-padding-top: 0;
+	}
+}
+
+body {
+	position: relative;
+	width: 100%;
+	background-color: var(--color-bg);
+	color: var(--color-text);
+	font-family: $font-default;
+	font-size: 1rem;
+	font-size: var(--text-font-size,1rem);
+	line-height: $line-height-base;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	font-feature-settings: "liga", "kern";
+	scroll-behavior: smooth;
+	scroll-padding-top: rem($nav-h);
+}
+
+.is-scrollBlocked body {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+}
+
+// @include mq($nav-mobile) {
+// 	.is-scrollBlockedMobile body {
+// 		position: fixed;
+// 		top: 0;
+// 		left: 0;
+// 		width: 100%;
+// 		height: 100%;
+// 		overflow: hidden;
+// 	}
+// }
+
+/* Sélection */
+@include selection {
+	background: var(--color-text);
+	text-shadow: none;
+	color: var(--color-bg);
+}
+
+/* Empécher le débordement */
+img,
+table,
+td,
+blockquote,
+code,
+pre,
+textarea,
+input,
+video,
+svg {
+	max-width: 100%;
+}
+
+/* Casser les chaines trop longues */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+textarea,
+p,
+li,
+figcaption {
+	word-wrap: break-word;
+}
+
+/* fix viewport pour Win8 (snap mode) et préparer le jour où le viewport sera supporté */
+@-webkit-viewport{ width: device-width }
+@-moz-viewport{ width: device-width }
+@-ms-viewport{ width: device-width }
+@-o-viewport{ width: device-width }
+@viewport{ width: device-width }
