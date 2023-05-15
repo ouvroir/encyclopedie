@@ -8,13 +8,17 @@ Ceci est un répertoire de travail sur le modèle éditorial de l’Encylopédie
 3. le déploiement de plusieurs outils pour assister le travail d’édition tels que LEAF-Writer.
 4. des transformations XSLT ou des développements réalisés en XQuery pour générer les pages HTML de la publication
 
-## Documents de référence
+## Sommaire du répertoire
 
 - [Propositions pour la chaîne éditoriale](./chaine-editoriale.md)
-- [Comparatif des éditeurs web](./benchmark-editeur-web.csv)
-- [Schémas XML pour l’édition structurée](Shémas XML pour l’édition)
-- [Autres chaînes éditoriales](./chaines.md)
+- [Standards d’intérêt pour la publication](./standards.md)
 - [Rapport de recherche sur les forges de publication (preprint)](https://ecrinum.gitpages.huma-num.fr/publishing-workflow-report-preprint/)
+- [Comparatif des éditeurs web](./benchmark-editeur-web.csv)
+- [Autres chaînes éditoriales](./chaines.md)
+
+## Prototype
+
+[Prototype (printemps 2023)](./prototype)
 
 ## Meta
 
