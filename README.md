@@ -16,6 +16,8 @@ Ceci est un répertoire de travail sur le modèle éditorial de l’Encylopédie
 - [Comparatif des éditeurs web](./benchmark-editeur-web.csv)
 - [Autres chaînes éditoriales](./chaines.md)
 
+- [Compte-rendus des réunions](./cr/)
+
 ## Prototype
 
 [Prototype (printemps 2023)](./prototype)

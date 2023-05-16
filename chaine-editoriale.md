@@ -37,7 +37,7 @@ Le modèle éditorial de l’Encyclopédie repose sur l’utilisation de la [Tex
 
 Le domaine de l’édition numérique a privilégié des modèles d’édition structurée fondée sur un balisage descriptif qui présente l’avantage d’assurer une meilleure distinction entre le contenu et la forme (et donc de séparer les traitements). Cette distinction garantit une meilleure maintenance du texte encodé et une meilleure portabilité des artefacts numériques. Les technologies XML autorisent l’utilisation de puissants outils informatiques pour automatiser les traitements des documents notamment pour gérer de multiples formats de sortie à partir d’un fichier pivot (*single source publishing*). Les technologies de balisage structuré offrent aussi une grande expressivité pour prendre documenter les contenus et les exposer dans d’autres formats de métadonnées standardisés. À cet égard, des grammaires de documents, ou schémas, permettent d’assurer le contrôle de la consistance de la production des fichiers. Enfin, XML est un bon candidat pour la pérennisation à long terme des documents (lutte contre l’obsolescence technique, documentation, validation).
 
-Pour tirer parti de cet environnement technique, le projet développe un modèle documentaire. La TEI propose des mécanismes d’extension et de personnalisation qui peuvent être exprimés sous la forme de modèles de document au format ODD. Il s’agit de fichiers TEI qui permettent de documenter des éditions et de générer des schémas XML pour le contrôle et la validation des fichiers. Le modèle documentaire mis au point pour l’Encyclopédie Des nouveaux usages des collections dans les musées d’art sera adapté à la structure encyclopédique de l’encyclopédie (classification des entrées, liens hypertextuels, etc.) et s’inspirera des meilleures pratiques en vigueur dans le domaine de la publication savante (cf. [Standards](./standards)).
+Pour tirer parti de cet environnement technique, le projet développe un modèle documentaire. La TEI propose des mécanismes d’extension et de personnalisation qui peuvent être exprimés sous la forme de modèles de document au format ODD. Il s’agit de fichiers TEI qui permettent de documenter des éditions et de générer des schémas XML pour le contrôle et la validation des fichiers. Le modèle documentaire mis au point pour l’Encyclopédie Des nouveaux usages des collections dans les musées d’art sera adapté à la structure encyclopédique de l’encyclopédie (classification des entrées, liens hypertextuels, etc.) et s’inspirera des meilleures pratiques en vigueur dans le domaine de la publication savante (cf. [Standards](./standards.md)).
 
 ### Standards de métadonnées
 
@@ -83,7 +83,88 @@ Voir le [répertoire de travail de l’Ouvroir d’histoire de l’art et de mus
 
 Génération d’un site statique avec des XSLT
 
-Voir le [prototype](./prototype)
+Voir le [prototype](./prototype/)
+
+## Référencement et signalement des contenus
+
+L’Encyclopédie Des nouveaux usages des collections dans les musées d’art doit répondre aux meilleurs standards en matirèe de référencement et de signalement des contenus sur le web. Afin d’y parvenir, le projet privilégie le respect d’un certain nombre de standards de référence dans le domaine de l’édition numérique.
+
+cf. le [document Standard](./standards.md)
+
+### Plusieurs actions sont mises en œuvres
+
+- Le respect de bonnes pratiques métier (formats, choix des standards, etc.)
+- Des actions de signalement actif dans l’écosystème d’édition numérique académique
+- La création d’un entrepôt OAI-PMH avec la distribution des métadonnées au format Dublin Core, Dublin Core qualifié, TEI et un standard adapté pour l’édition scientifique
+- Les pages web du site sont signalées dans plusieurs formats de métadonnées pour l’importation automatique des références dans les principaux logiciels de gestion de références bibliographiques et le référencement par les moteurs de recherche
+
+### Grille des critères QUERO
+
+Si votre revue n'est pas encore sur OpenEdition, avez-vous l'intention de rejoindre la plateforme un jour ?
+
+Scopus et / ou le Web of Science ?
+
+Ces deux bases de données bibliographiques commerciales sont des références dans l'univers scientifique, même si leur fonctionnement économique et leur philosophie vont à l'encontre de la Science Ouverte. D'un point de vue de la diffusion, de l'accessibilité et du rayonnement de votre revue, elles restent néanmoins un passeport scientifique qui garantie la qualité de votre revue à l'échelle internationale.
+
+Sur quelles bases de données, catalogues bibliographiques et autres ressources en ligne, souhaiteriez-vous que votre revue apparaîsse ?
+
+Wikipédia est un outil très utile pour le référencement. Si ce n'est pas déjà le cas, souhaiteriez-vous qu'une page y soit créée pour votre revue ?
+
+DOAJ [https://doaj.org](https://doaj.org/)
+
+### Référencements (cibles)
+
+- [ ] site de la revue
+- [ ] Sudoc (France)
+- [ ] Catalogue BCI (Québec)
+- [ ] Woldcat
+- [ ] EZB Elektronische Zeitschriftenbibliothek
+- [ ] Isidore
+- [ ] HAL
+- [ ] Bnf (Catalogue général)
+- [ ] BAnQ
+- [ ] Mir@bel
+- [ ] DOAJ
+- [ ] LATINDEX
+- [ ] ISSN
+- [ ] Road (par l’ISSN)
+- [ ] BASE Bielefeld
+- [ ] JournalTocs
+- [ ] Miar
+- [ ] OpenAIRE
+- [ ] Sherpa Romeo
+- [ ] Où publier CIRAD
+- [ ] Dimensions
+- [ ] SCOPUS [pas nécessaire]
+- [ ] ESCI Emerging citation Index [pas nécessaire]
+- [ ] EbscoHost [pas nécessaire]
+- [ ] ERIH Plus [pas nécessaire]
+- [ ] BACON de l’ABES (via OEJ pour HN)
+- [ ] Google scholar
+- [ ] Wikipedia
+- [ ] Réseaux sociaux
+- [ ] Internet Archive
+
+- choix des mots-cles
+- respect des RGPD
+- utilisation de langages documentaires nationaux ou internationaux ont un intérêt d'un point de vue du référencement des articles
+- téléchargement des articles en format JATS ou TEI
+- Dépôt de marque ?
+
+## Pérennisation
+
+Les choix technologiques réalisés pour la chaîne éditoriale de l’Encyclopédie *Des nouveaux usages des collections dans les musées d’art* ont été formulés afin d’offrir le meilleur profil de pérennisation des contenus.
+
+- Utilisation de fichiers pivots en XML encodé en UTF-8 
+  XML est un bon candidat pour la pérennisation à long terme des documents électroniques comme il s’agit de fichiers textes et d’un standard ouvert. Il n’y a pas de dépendances logicielles pour leur utilisation. Les fichiers peuvent être associés à une grammaire de documents (schémas) pour la validation et faire l’objet de transformations automatisées en masse.
+- Emploi de la Text Encoding Initiative (TEI)
+  La TEI constitue un standard de fait bien établi dans la communauté scientifique internationale pour la conservation des éditions numériques. De nombreux outils ont été développés par la communauté académique pour la conversion et la conversion des documents.
+- Spécification formelle d’une personnalisation de la Text Encoding Initiative (TEI) documentée avec ODD
+  Les modèles de document du projet sont spécifiés et documentés dans le langage ODD proposé par la TEI pour sa personnalisation. Outre une documentation fine du modèle, cette spécification formelle de document permet de générer des schémas de document pour la validation des fichiers et d’organiser la conversion automatique des documents en vue de leur migration.
+- Utilisation d’un schéma pour la validation des contenus
+  Les fichiers pivots XML du projet peuvent être validés par des schémas pour garantir leur consistance et leur bonne conservation.
+
+Le modèle retenu pour l’édition est celui du Single-Source publishing
 
 ## Application de publication en ligne
 
@@ -130,7 +211,7 @@ https://docs.google.com/document/d/1jzev0mSlcpvRUfq2Z6834h9K6zQjtMxU2ErHfL-HbZ4/
 
 ## Références
 
-## Références
+## Références sites statistiques
 
 - Greenwood, Tom. 2021. « Sustainable Web Design, An Excerpt ». *A List Apart* (blog). 5 août 2021.[ https://alistapart.com/article/sustainable-web-design-excerpt/](https://alistapart.com/article/sustainable-web-design-excerpt/).
 - Balkan, Aral. 2020. « What Is the Small Web? » *Aral Balkan* (blog). 7 août 2020.[ https://ar.al/2020/08/07/what-is-the-small-web/](https://ar.al/2020/08/07/what-is-the-small-web/).
@@ -182,3 +263,14 @@ Question du templating, enrichissement des pages.
 « Hydration (Web Development) ». 2021. In *Wikipedia*.[ https://en.wikipedia.org/w/index.php?title=Hydration_(web_development)&oldid=1028530042](https://en.wikipedia.org/w/index.php?title=Hydration_(web_development)&oldid=1028530042).
 
 « Rendering on the Web ». s. d. Google Developers. Consulté le 21 août 2021.[ https://developers.google.com/web/updates/2019/02/rendering-on-the-web?hl=fr](https://developers.google.com/web/updates/2019/02/rendering-on-the-web?hl=fr).
+
+## Évaluation de projets numériques
+
+- Guidelines for the Evaluation of Digital Scholarship in Art and Architectural History. College Art Association and the Society of Architectural Historians, janvier 2016. http://www.collegeart.org/news/2016/02/23/the-college-art-association-and-the-society-of-architectural-historians-release-guidelines-for-the-evaluation-of-digital-scholarship-in-art-and-architectural-history/
+- Evaluating DH Scholarship: Guidelines – CSDH / SCHN, http://csdh-schn.org/evaluationpolicy/
+- The San Francisco Declaration on Research Assessment (DORA), [http://www.ascb.org/dora/	](http://www.ascb.org/dora/)
+- Criteria for Reviewing Scholarly Digital Editions, version 1.1, http://www.i-d-e.de/publikationen/weitereschriften/criteria-version-1-1/
+- How to Evaluate Digital Scholarship Journal of Digital Humanities"How to Evaluate Digital Scholarship Journal of Digital Humanities". Journal of Digital Humanities, 1, no 4 (2012). http://journalofdigitalhumanities.org/1-4/how-to-evaluate-digital-scholarship-by-todd-presner
+- Guidelines for the Evaluation of Digital Scholarship Across Disciplines. Joint Provost-Academic Senate University Research Committee, https://academicsenate.usc.edu/files/2015/08/Final-Report-on-Digital-Scholarship-Evaluation-Guidelines.pdf
+- Evaluating Digital Scholarship - Digital Scholarship Workshops - LibGuides at Claremont Colleges Library, http://libguides.libraries.claremont.edu/digitalscholarship/evaluation
+- Evaluating Digital Scholarship | sponsored by the MLA Committee on Information Technology, https://evaluatingdigitalscholarship.mla.hcommons.org/
