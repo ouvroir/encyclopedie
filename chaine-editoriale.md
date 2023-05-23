@@ -41,14 +41,15 @@ Pour tirer parti de cet environnement technique, le projet développe un modèle
 
 Le modèle cible les fonctionnalités suivantes :
 
-- structuration des parties et sous parties de l’article
-- prise en charge des illustrations
+- structuration des parties et sous-parties des articles et des contenus textuels
+- prise en charge des illustrations et des contenus multimédias
 - gestion des notes
 - contrôle des références bibliographiques
 - contrôle des métadonnées
 - enregistrement des identifiants
-- alignement avec des standards cibles pour l’exposition des données
-- indexation et classification des arcticles
+- alignement avec des standards cibles pour l’exposition des métadonnées
+- indexation et classification des articles
+- contrôles orthotypographiques
 
 ### Standards de métadonnées
 
@@ -87,7 +88,9 @@ Afin de garantir l’interopérabilité, les ressources disposent de plusieurs r
 
 #### Les métadonées utilisent des schémas pertinents pour le domaine
 
-TEI et SPAR sont des ontologies dédiées au domaine de l’édition et très largement utilisées. Les œuvres d’
+TEI et SPAR sont des ontologies dédiées au domaine de l’édition et très largement utilisées. Les œuvres d’art seront décrites avec des modèles de métadonnées du secteur culturel. 
+
+@todo utiliser LinkedArt
 
 #### Les métadonnées font explicitement références aux identifiants
 
@@ -104,6 +107,8 @@ L’indexation et le référencement des ressources utilise les vocabulaires str
 - [Art and Architecture Thesaurus (AAT)](https://www.getty.edu/research/tools/vocabularies/aat/) pour les termes artistiques et techniques
 - [Union List of Artist Names](https://www.getty.edu/research/tools/vocabularies/ulan/) pour les noms d’artistes
 - [WikiData](https://www.wikidata.org) pour les références générales
+
+@todo veut-on créer des identifiants pour les œuvres ?
 
 ## Conversion de documents bureautiques vers le modèle documentaire
 

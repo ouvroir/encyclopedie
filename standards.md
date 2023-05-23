@@ -66,6 +66,8 @@ Les [Digital Object Identifier (DOI)](https://www.doi.org) sont des identifiants
 
 ### ISNI
 
+[ISNI](https://isni.org)
+
 ## Mentions de responsabilités
 
 [CRediT (Contributor Roles Taxonomy)](https://credit.niso.org)

@@ -151,3 +151,7 @@ https://www.pubpub.org
 https://scalar.me
 
 > Scalar is a free, [open source](http://github.com/anvc/scalar) authoring and publishing platform that’s designed to make it easy for authors to write long-form, born-digital scholarship online. Scalar enables users to assemble [media](http://scalar.me/anvc/features/media-support/) from multiple [sources](http://scalar.me/anvc/features/archive-partners/) and juxtapose them with their own writing in a variety of ways, with minimal technical expertise required.
+
+Pro :
+
+Cons :
