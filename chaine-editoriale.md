@@ -39,6 +39,16 @@ Le domaine de l’édition numérique a privilégié des modèles d’édition 
 
 Pour tirer parti de cet environnement technique, le projet développe un modèle documentaire. La TEI propose des mécanismes d’extension et de personnalisation qui peuvent être exprimés sous la forme de modèles de document au format ODD. Il s’agit de fichiers TEI qui permettent de documenter des éditions et de générer des schémas XML pour le contrôle et la validation des fichiers. Le modèle documentaire mis au point pour l’Encyclopédie Des nouveaux usages des collections dans les musées d’art sera adapté à la structure encyclopédique de l’encyclopédie (classification des entrées, liens hypertextuels, etc.) et s’inspirera des meilleures pratiques en vigueur dans le domaine de la publication savante (cf. [Standards](./standards.md)).
 
+Le modèle cible les fonctionnalités suivantes :
+
+- structuration des parties et sous parties de l’article
+- prise en charge des illustrations
+- gestion des notes
+- contrôle des références bibliographiques
+- contrôle des métadonnées
+- alignement avec des standards cibles pour l’exposition des données
+- indexation et classification des arcticles
+
 ### Standards de métadonnées
 
 Le modèle documentaire de l’Encyclopédie doit permettre un signalement approprié des articles. Afin de pouvoir alimenter un entrepôt OAI-PMH, les métadonnées des articles doivent être alignées avec Dublin Core et Dublin Core qualifié.
