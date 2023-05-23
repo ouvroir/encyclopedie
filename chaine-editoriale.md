@@ -46,18 +46,64 @@ Le modèle cible les fonctionnalités suivantes :
 - gestion des notes
 - contrôle des références bibliographiques
 - contrôle des métadonnées
+- enregistrement des identifiants
 - alignement avec des standards cibles pour l’exposition des données
 - indexation et classification des arcticles
 
 ### Standards de métadonnées
 
-Le modèle documentaire de l’Encyclopédie doit permettre un signalement approprié des articles. Afin de pouvoir alimenter un entrepôt OAI-PMH, les métadonnées des articles doivent être alignées avec Dublin Core et Dublin Core qualifié.
+Le modèle documentaire de l’Encyclopédie doit permettre un signalement approprié des articles. Afin de pouvoir alimenter un entrepôt OAI-PMH, les métadonnées des articles sont alignées avec Dublin Core et Dublin Core qualifié. Les contenus sont signalés dans des formats de métadonnées lisibles par la machine. Un travail particulier est accordé aux métadonnées sur les contenus multimédias en utilisant des modèles appropriés (images, vidéos). De même, un soin particulier est accordé à l’archivage des liens externes. La publication en ligne cherche à répondre aux meilleures pratiques en matière de référencement de la publication avec l’utilisation d’identifiants pérennes pour les articles, les auteurs et les autrices (DOI, ORCID), l’exposition des métadonnées, et une démarche active de signalement des contenus.
 
-Un travail particulier doit être accordé aux métadonnées sur les contenus multimédias en utilisant des modèles appropriés (images, vidéos). De même, il convient d’accorder un soin particulier à l’archivage des liens externes.
+cf. le [document dédié aux standards pertinents](./standards.md)
 
-La publication en ligne doit répondre aux meilleures pratiques en matière de référencement de la publication (utilisation de DOI, mentions des identifiants ORCID pour les auteurs et les autrices, exposition des métadonnées, démarche active de signalement des contenus). 
+#### Identifiants uniques
 
-cf. le [document dédié](./standards.md)
+Les ressources de la plateforme sont identifiées par des identifiants uniques qui répondent à un schème d’identification. Ces identifiants sont signalés dans les sources des articles. L’Encyclopédie *Des nouveaux usages des collections dans les musées d’art* utilise des [Digital Object Identifier (DOI)](https://www.doi.org), un standard ISO  pour l’identification de documents ([ISO 26324](https://www.iso.org/fr/standard/43506.html)).
+
+@todo préciser la granularité
+
+@todo faire des démarches pour l’acquisition d’un ISSN ou d’un ISBN
+
+#### Identifiants pérennes
+
+Chaque ressources dispose d’un identifiant pérenne ou persistant (PID) qui répondent à un schème d’identification. Celui-ci est maintenu dans tout le cycle de vie des documents et est également signalé dans les sources des articles.
+
+Comme les contenus sont susceptibles de modifications et de corrections, ceux-ci font l’objet d’un versionnage et disposent de leur propre identifiant.
+
+- le schème d’identification est décrit par une expression régulière pour pouvoir être validé automatiquement
+- le système garantit la pérennité des identifiants dans le temps
+
+#### Métadonnées lisibles par la machine
+
+La TEI répond bien à l’exigence de métadonnées lisible par les machine. Cependant, afin d’améliorer le signalement des ressources de l’Encyclopédie, les contenus sont présentés dans d’autres formats de métadonnées pertinents pour le domaine de l’édition ou de l’histoire de l’art.
+
+#### Interopérabilité
+
+Afin de garantir l’interopérabilité, les ressources disposent de plusieurs représentations.
+
+- toutes les ressources donnent lieu à une description en Dublin Core et en Dublin Core qualifié
+- les articles décrits avec l’ontologie SPAR
+- les ressources sont signalées avec [Schema.org](https://schema.org) pour le référencement
+
+#### Les métadonées utilisent des schémas pertinents pour le domaine
+
+TEI et SPAR sont des ontologies dédiées au domaine de l’édition et très largement utilisées. Les œuvres d’
+
+#### Les métadonnées font explicitement références aux identifiants
+
+Dans tous leurs formats, les métadonnées font explicitement référence aux identifiants.
+
+- un modèle de métadonnées spécialisé est utilisé pour les œuvres d’art
+- un travail spécifique est mené sur la citabilité (@todo préciser)
+
+#### Les métadonnées utilisent des vocabulaires qui répondent aux principes FAIR
+
+L’indexation et le référencement des ressources utilise les vocabulaires structurés suivants :
+
+- [GeoNames](https://www.geonames.org) pour les lieux géographiques
+- [Art and Architecture Thesaurus (AAT)](https://www.getty.edu/research/tools/vocabularies/aat/) pour les termes artistiques et techniques
+- [Union List of Artist Names](https://www.getty.edu/research/tools/vocabularies/ulan/) pour les noms d’artistes
+- [WikiData](https://www.wikidata.org) pour les références générales
 
 ## Conversion de documents bureautiques vers le modèle documentaire
 
@@ -117,13 +163,27 @@ cf. le [document Standard](./standards.md)
 - La création d’un entrepôt OAI-PMH avec la distribution des métadonnées au format Dublin Core, Dublin Core qualifié, TEI et un standard adapté pour l’édition scientifique
 - Les pages web du site sont signalées dans plusieurs formats de métadonnées pour l’importation automatique des références dans les principaux logiciels de gestion de références bibliographiques et le référencement par les moteurs de recherche
 
+#### Entrepôt OAI-PMH
+
+Pour permettre la découvrabilité des ressources et leur moissonnage, la plateforme alimente un entrepôt OAI-PMH. Cet entrepôt permet notamment le moissonnage par le moteur de recherche francophone en sciences humaines et sociales [Isidore](https://isidore.science).
+
+Ce protocole est libre et ouvert. Il permet l’accès aux ressources sans autorisation préalable.
+
+#### Mise à disposition selon une licence explicite
+
+La mise à disposition des métadonnées est faite en utilisant une licence explicite. Comme il n’y a pas de droit d’auteur sur les métadonnées et afin de faciliter le signalement des ressources, celles-ci sont considérées comme relevant du domaine public. Pour ce faire, on utilise la licence [Creative Commons Zero 4.0 (CC-0)](https://creativecommons.org/choose/zero/).
+
+#### Accès aux versions
+
+Les contenus sont susceptibles de corrections et de modifications au cours de la vie du projet. L’application doit donner accès aux différentes versions des contenus.
+
 ### Grille des critères QUERO
 
-Si votre revue n'est pas encore sur OpenEdition, avez-vous l'intention de rejoindre la plateforme un jour ?
+Ces critères s’inspirent en grande partie d’un état de l’art international et ont fait l’objet d’une mise en correspondance avec les systèmes d’information internationaux qualifiants, Latindex et [DOAJ](https://doaj.org/apply/transparency/), les préconisations du PLAN S en Europe et des critères d’exemplarité du CoSO relatifs aux contenus éditoriaux, dans le contexte de la science ouverte.
 
 Scopus et / ou le Web of Science ?
 
-Ces deux bases de données bibliographiques commerciales sont des références dans l'univers scientifique, même si leur fonctionnement économique et leur philosophie vont à l'encontre de la Science Ouverte. D'un point de vue de la diffusion, de l'accessibilité et du rayonnement de votre revue, elles restent néanmoins un passeport scientifique qui garantie la qualité de votre revue à l'échelle internationale.
+Ces deux bases de données bibliographiques commerciales sont des références dans l'univers scientifique, même si leur fonctionnement économique et leur philosophie vont à l'encontre de la Science Ouverte. D'un point de vue de la diffusion, de l’accessibilité et du rayonnement de notre contenu elles restent néanmoins un passeport scientifique qui garantie la qualité à l'échelle internationale. Mais il n’est pas évident que nous puissions y avoir accès.
 
 Sur quelles bases de données, catalogues bibliographiques et autres ressources en ligne, souhaiteriez-vous que votre revue apparaîsse ?
 
@@ -199,7 +259,7 @@ Accessibilité, lisibilité, mise en avant du texte et sorties multisupports
 
 - Accessibilité et lisibilité, mise en avant du texte et de l’hypertexte
 - Développement responsive en privilégiant la mise en page pour la lecture pour tablette (horizontale, verticale). *Progressive enhancing* pour les téléphones intelligents.
-- Prévoir des sorties multiples qui s’appuient sur la chaîne éditoriale (html, epub, pdf)
+- Formats détachables par unités éditoriales avec des sorties multiples qui s’appuient sur la chaîne éditoriale (html, epub, pdf)
 
 #### Pistes techniques à explorer pour le client
 

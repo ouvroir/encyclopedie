@@ -87,3 +87,7 @@ https://force11.org/info/joint-declaration-of-data-citation-principles-final/
 DOAJ (si nous nous décrivons comme un périodique)
 
 Sherpa Romeo et Mir@bel
+
+## Métriques et bonnes pratiques
+
+[FAIR Metrics](https://github.com/FAIRMetrics/Metrics)
