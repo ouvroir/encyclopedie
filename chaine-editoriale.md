@@ -73,6 +73,15 @@ Afin de faciliter la récupération des contenus, un modèle de document de trai
 
 [LEAF-Writer](https://leaf-writer.leaf-vre.org) est un éditeur web XML de type WYSIWYG compatible avec des personnalisations de la TEI. Cet outil peut faire l’objet de personnalisation pour être adapté aux besoins particuliers du modèle éditorial.
 
+LEAF-Writer offre par défaut une interface commode pour travailler sur des documents TEI pour traiter les métadonnées des articles et la restructuration du texte en utilisant un schémas. Le logiciel permet de marquer les citations, d’insérer des notes, des références bibliographiques ou de marquer des entrées d’index.
+
+Les personnalisations qui pourraient être réalisées pour améliorer sa maniabilité dans le cadre du projet porteraient de manière prioritaire :
+
+- sur l’insertion des articles dans le système de catégories de l’encyclopédie
+- un interfaçage avec les outils de gestions de contenus du projet pour l’illustration et l’insertion de contenus multimédias
+- une personnalisation des fonctionnalités d’indexation
+- une amélioration des formulaires de saisie
+
 ### *Common*
 
 *Common* est une base de données destinée à rassembler, décrire avec des métadonnées appropriées toutes les sources mobilisées et les contenus documentaires produits dans le cadre du partenariat (redéploiements de collections (axe 1), archives citoyennes (axe 2), dépouillement des dossiers d’acquisition et des politiques institutionnelles (axe 3 et 4), et de rassembler les sources visuelles et audiovisuelles pour la préparation de l’Encyclopédie). Il s’agit d’un système de gestion documentaire multi-utilisateurs qui permet l’archivage, le signalement et le partage de la documentation à travers des interfaces faciles d’emploi et qui sert de plateforme de travail collaborative pour tous les chercheurs et les auxiliaires de recherche engagés dans le projet.
