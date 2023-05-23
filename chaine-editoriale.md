@@ -7,7 +7,7 @@ Status: Draft
 
 ## Chaîne éditoriale de l’Encyclopédie *Des nouveaux usages des collections dans les musées d’art*
 
-Version 0.1 (Brouillon)
+Version 0.2 (Brouillon)
 
 La publication en ligne de l’Encylopédie *Des nouveaux usages des collections dans les musées d’art* est une publication savante dont le modèle éditorial doit répondre aux meilleurs standards internationaux en matière de référencement de la publication et de pérennisation des contenus. La publication des entrées donne donne lieu à une éditorialisation et des enrichissements par des compléments numériques conçus en lien avec les auteurs et les autrices qui nécessitent une gestion particulière des métadonnées pour les contenus multimédias, les données structurées et des liens. Afin d’y parvenir, la publication repose sur l’utilisation de techniques d’édition structurée bien établies qui sont destinées à faciliter la maintenance et le traitement automatique des contenus.
 
