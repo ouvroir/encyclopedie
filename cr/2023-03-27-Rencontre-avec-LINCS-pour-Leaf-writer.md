@@ -123,14 +123,17 @@ Est-ce que les entités sont dans un fichier externe ou dans le XML?
 Formulaire pour les entités RDF ou pour celles XML aussi? 
 
 Travailler sur quelques use case
-- décrire les opérations, ex: ajouter une référence bibliographique
+- décrire les opérations, ex: ajouter une référence bibl	iographique
 - schéma
 - pas s'occuper des entrées (doc vers xml-tei) ni vers les sorties (xml-tei vers html)
 
 Prévoir un working session avec Diane (et autre? Susan sera là si elle est dispo)
 Quand on sera prêts → après les examens de William 
 
+
+
 Plan:
+
 - Expérimentation pratique: type de contenu → bases du mini-prototype
     - schema
     - contenu type

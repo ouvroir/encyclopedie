@@ -153,7 +153,7 @@ Configurable options but would stil be linked to the codebase.
 
 ## suivi détaillé
 
-- What would it take for LW and for Ouvroir teams to integrate these functionnalitie?
+- What would it take for LW and for Ouvroir teams to integrate these functionnalities?
 - When that fits into the workload and calendars of both teams
 
 There are a few things we can start working on, inserting an image. 
