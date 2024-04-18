@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/lucaju/cwrc-writer-samples/master/tei_jtei.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../../schemas/tei_jtei.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../../schemas/tei_jtei.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title type="main">L’architecture sous le rapport des mœurs</title>
-            <title type="sub">Conception artistique et science des mœurs chez Claude-Nicolas Ledoux</title>
-            <author>
+            <title type="main">Article 01</title>
+            <title type="sub">Sous-titre article</title>
+            <author ref="#fm">
                <forename>Fabrice</forename>
                <surname>Moulin</surname>
                <affiliation>Université de Paris-Nanterre</affiliation>
@@ -38,11 +39,16 @@
                </licence>
             </availability>
          </publicationStmt>
+
          <seriesStmt>
-            <title xml:lang="fre" type="main">L’Architecture de Ledoux</title>
-            <idno type="URI">http://www.ledoux-architecture.fr</idno>
+            <title xml:lang="fr" type="main">Acquisition</title>
+            <title xml:lang="fr" type="sub">Encyclopédie des nouveaux usages des collections dans les musées d’art</title>
+            <title xml:lang="en" type="main">Acquisition</title>
+            <title xml:lang="en" type="sub">Encyclopedia of New Uses of Collections</title>
+            <idno type="URI">http://www.nucma.ca</idno>
          </seriesStmt>
-         <sourceDesc xml:id="ledoux-etudes01-article01">
+
+         <sourceDesc xml:id="nucma-acquisition-article02">
             <p>Fichier nativement numérique</p>
          </sourceDesc>
       </fileDesc>

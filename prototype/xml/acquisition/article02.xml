@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/lucaju/cwrc-writer-samples/master/tei_jtei.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../../schemas/tei_jtei.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../../schemas/tei_jtei.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-stylesheet type="text/xsl" href="../xsl/teiJ2html.xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title type="main">Administrer les Arts en Conseil</title>
-            <title type="sub">L’enjeu de la collégialité à la Commission des travaux publics et au Conseil des bâtiments civils, 1793-1848</title>
-            <author>
+            <title xml:lang="fr" type="main">Article 2</title>
+            <title xml:lang="fr" type="sub">Sous-titre article 2</title>
+            <author ref="#ecd"> 
                <forename>Emmanuel</forename>
                <surname>Chateau-Dutier</surname>
                <affiliation>Université de Montréal</affiliation>
@@ -25,10 +26,13 @@
             </availability>
          </publicationStmt>
          <seriesStmt>
-            <title xml:lang="fre" type="main">L’Architecture de Ledoux</title>
-            <idno type="URI">http://www.ledoux-architecture.fr</idno>
+            <title xml:lang="fr" type="main">Acquisition</title>
+            <title xml:lang="fr" type="sub">Encyclopédie des nouveaux usages des collections dans les musées d’art</title>
+            <title xml:lang="en" type="main">Acquisition</title>
+            <title xml:lang="en" type="sub">Encyclopedia of New Uses of Collections</title>
+            <idno type="URI">http://www.nucma.ca</idno>
          </seriesStmt>
-         <sourceDesc xml:id="ledoux-etudes01-article02">
+         <sourceDesc xml:id="nucma-acquisition-article01">
             <p>Fichier nativement numérique</p>
          </sourceDesc>
       </fileDesc>

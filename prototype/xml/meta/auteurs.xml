@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schemas/tei_jtei.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../../schemas/tei_jtei.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet type="text/xsl" href="../xsl/teiJ2html.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="fr" type="main">Liste des auteurs et des autrices</title>
+            <title xml:lang="en" type="main">List of authors</title>
+         </titleStmt>
+         <publicationStmt>
+            <publisher />
+            <date when="2021">2021</date>
+            <idno type="DOI">10.400/encynucma/article02</idno>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">
+                  <p>Ce contenu est mis à disposition sous licence Creative Commons Attribution 4.0.</p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <seriesStmt>
+            <title xml:lang="fr" type="main">Encyclopédie des nouveaux usages des collections dans les musées d’art</title>
+            <title xml:lang="en" type="main">Encyclopedia of New Uses of Collections</title>
+            <idno type="URI">http://www.nucma.ca</idno>
+         </seriesStmt>
+         <sourceDesc xml:id="nucma-acquisition-article01">
+            <p>Fichier nativement numérique</p>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="fr"/>
+         </langUsage>
+         <textClass>
+            <keywords xml:lang="fr">
+               <term>architecture</term>
+               <term>société</term>
+            </keywords>
+         </textClass>
+      </profileDesc>
+   </teiHeader>
+   <text>
+    <body>
+        <listPerson>
+            <head xml:lang="fr">Liste des auteurs et des autrices</head>
+            <head xml:lang="en">List of authors</head>
+            <person xml:id="ecd">
+                <persName>
+                    <forename>Emmanuel</forename>
+                    <surname>Château-Dutier</forename>
+                </persName>
+                <note xml:lang="fr">
+                    <p>Emmanuel Château-Dutier est historien de l’architecture et professeur agrégé en muséologie numérique à l’Université de Montréal. Ses recherches portent sur l’administration de l’architecture publique en France au XIX<hi rend="superscript">e</hi> siècle, la muséologie et l’histoire de l’art numériques. Il est responsable de l’axe numérique du Partenariat <title>Des nouveaux usages des collections dans les musées d’art</title> (la collection partagée) et assure la co-direction scientifique de l’<ref target="https://ouvroir.umontreal.ca">Ouvroir d’histoire de l’art et de muséologie numériques</ref> qui l’accompagne. Il est spécialisé dans le domaine des métadonnées culturelles, les éditions structurées, les technologies XML, le web sémantique et le web de données ouvertes et liées. Signataire du <title>Manifeste des humanités numériques</title> en 2010, Emmanuel Château a pris une part active dans la constitution d’une communauté francophone des humanités numériques. Membre fondateur d’Humanistica et de la revue <title>Humanités Numériques</title>, il est également vice-président francophone de la Société canadienne des humanités numériques.</p>
+                </note>
+                <note xml:lang="en">
+                    <p>Emmanuel Château-Dutier is an architectural historian and associate professor of digital museology at the University of Montreal. His research focuses on the administration of public architecture in France in the 19<hi rend="superscript">th</hi> century, museology and digital art history. He is responsible for the digital axis of the Partnership <title>New uses of collections in art museums</title> (the shared collection) and ensures the scientific co-direction of the <ref target="https://ouvroir.umontreal.ca">d’histoire de l’art et de muséologie numériques</ref> the laboratory supporting this research. He specializes in the field of cultural metadata, structured editions, XML technologies, the semantic web and the web of open and linked data. Signatory of the <title>Digital Humanities Manifesto</title> in 2010, Emmanuel Château took an active part in the creation of a French-speaking digital humanities community. A founding member of Humanistica and the journal <title>Humanités Numériques</title>, he is also French-speaking vice-president of the Canadian Society for Digital Humanities.</p>
+                </note>
+                <affiliation>Université de Montréal</affiliation>
+                <idno type="orcid">https://orcid.org/0000-0003-4092-4569</idno>
+            </person>
+        </listPerson>
+    </body>
+   </text>
+</TEI>
