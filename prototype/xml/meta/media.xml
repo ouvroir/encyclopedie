@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schemas/tei_jteiCustomOk.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../../schemas/tei_jteiCustomOk.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet type="text/xsl" href="../xsl/teiJ2html.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="fr" type="main">Liste des auteurs et des autrices</title>
+            <title xml:lang="en" type="main">List of authors</title>
+            <author> <!--add authors (y compris assistants de recherche qui font l'encodage ou créateur/créatrice du script de transformation) => à voir-->
+            <forename></forename> <!-- forename and surname do not need translation (important for checks in xslt) -->
+            <surname></surname>
+            <roleName></roleName> <!-- only this tag and maybe affiliation would require translation -->
+            <affiliation></affiliation>
+            </author>
+         </titleStmt>
+         <publicationStmt>
+            <publisher />
+            <date when="2021">2021</date>
+            <idno type="DOI">10.400/encynucma/article02</idno>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">
+                  <p>Ce contenu est mis à disposition sous licence Creative Commons Attribution 4.0.</p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <seriesStmt>
+            <title xml:lang="fr" type="main">Encyclopédie des nouveaux usages des collections dans les musées d’art</title>
+            <title xml:lang="en" type="main">Encyclopedia of New Uses of Collections</title>
+            <idno type="URI">http://www.nucma.ca</idno>
+         </seriesStmt>
+         <sourceDesc xml:id="nucma-acquisition-article01">
+            <p>Fichier nativement numérique</p>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="fr"/>
+         </langUsage>
+         <textClass> <!--may not be necessary here, only in chapters and articles-->
+            <keywords xml:lang="fr">
+               <term>architecture</term>
+               <term>société</term>
+            </keywords>
+         </textClass>
+      </profileDesc>
+   </teiHeader>
+   <text>
+    <body>
+    <list xml:id="media"> 
+    <item> 
+        <figure xml:id="figureid"> <!--<ref type="crossref" target="#figureid"/> or <ptr target="#figureid" type="crossref"/> dans les chapîtres et articles dans une balise <div> ou <p> --> 
+            <graphic url="images/image01"/> <!--il faut prendre en compte emplacement de l'image si local pour la generation de l'html-->
+            <head xml:lang="fr">Claude-Nicolas Ledoux (architecte), Coquet et Simon (graveurs). Maison de campagne.</head>
+            <head xml:lang="fr">L’Architecture considérée sous le rapport de l’art, des mœurs et de la législation… Paris : Chez  l’Auteur, 1804. Planche 29. Domaine public. URL : https://gallica.bnf.fr/ark:/12148/bpt6k1047050b/f307.item.zoom</head>
+            <head xml:lang="en">Traduction</head>
+            <head xml:lang="en">traduction</head>
+            <!-- @todo faire évoluer le schéma pour les planches -->
+        </figure>
+      </item>
+     </list>
+    </body>
+ </text>
+</TEI>

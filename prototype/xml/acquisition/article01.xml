@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../schemas/tei_jtei.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="../../schemas/tei_jtei.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../schemas/tei_jteiCustomOk.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../../schemas/tei_jteiCustomOk.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
          <titleStmt>
             <title type="main">Article 01</title>
             <title type="sub">Sous-titre article</title>
-            <author ref="#fm">
+            <author ref="#fm"> <!--add @ref to author tag in schema-->
                <forename>Fabrice</forename>
                <surname>Moulin</surname>
                <affiliation>Université de Paris-Nanterre</affiliation>
@@ -233,14 +233,15 @@
 <q>De nouvelles habitudes, dictées par l’exemple, maintenues par des surveillants, entretiendront le corps et l’esprit dans les usages journaliers qui constituent la force et assurent la santé.</q> (81)</p>
 </note>
 </div>
+<!-- Pas besoin, générée avec la feuille de transformation
 <div type="bibliography">
 <head>Bibliographie</head>
-<bibl>Blondel, Jacques-François, <title>Cours d’Architecture civile ou traité de la décoration, Distribution et Construction des bâtiments, contenant les Leçons données en 1750 et les années suivantes par J. F. Blondel, Architecte, dans son École des Arts</title>, 6 vol. Paris, Desaint, 1771.</bibl>
+<bibl ref="">Blondel, Jacques-François, <title>Cours d’Architecture civile ou traité de la décoration, Distribution et Construction des bâtiments, contenant les Leçons données en 1750 et les années suivantes par J. F. Blondel, Architecte, dans son École des Arts</title>, 6 vol. Paris, Desaint, 1771.</bibl>
 <bibl>Ledoux, Claude-Nicolas, <title>L’Architecture considérée sous le rapport de l’art, des mœurs et de la législation</title>, Paris, 1804, rééd. Paris, Hermann, coll. « Savoirs sur l’art », 1997.</bibl>
 <bibl>Rabreau, Daniel, <title>Claude-Nicolas Ledoux (1736-1806)</title>, Bordeaux, Librairie de l’architecture et de la ville, 2000.</bibl>
 <bibl>Vidler, Anthony, <title>Claude-Nicolas Ledoux: Architecture and Social Reform at the End of the Ancien Régime</title>, Cambridge (Mass.), MIT Press, 1990.</bibl>
 <bibl>Vidler, Anthony, <title>L’Espace des Lumières : Architecture et philosophie</title>, trad. Catherine Fraisse, Paris, Picard, 1995.</bibl>
-</div>
+</div>-->
 </back>
 </text>
 </TEI>

@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../schemas/tei_jtei.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="../../schemas/tei_jtei.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../schemas/tei_jteiCustomOk.rng" type="application/xml" schematypens="../../schemas/tei_jtei-2.rng"?>
+<?xml-model href="/Users/flsh/Downloads/tei_jteiCustomOk.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <teiCorpus xmlns="http://www.tei-c.org/ns/1.0"
-   xmlns:xi="http://www.w3.org/2001/XInclude">
+   xmlns:xi="http://www.w3.org/2001/XInclude"> <!--add 'teiCorpus' to schema-->
    <teiHeader>
       <fileDesc>
          <titleStmt>
             <title xml:lang="fr" type="main">Acquisition</title>
             <title xml:lang="en" type="main">Acquisition</title>
+            <author></author>
          </titleStmt>
          <publicationStmt>
             <publisher xml:lang="fr">Groupe de recherche et de réflexion CIÉCO</publisher>
@@ -25,10 +26,17 @@
          </sourceDesc>
       </fileDesc>
    </teiHeader>
+   <text>
+      <body>
    <xi:include href="./article01.xml" parse="xml">
-      <xi:fallback>Fichier non trouvé</xi:fallback>
+   <!--Fallback it's always the same: might be a good idea to account for it programmatically in xslt-->
+   <xi:fallback xml:lang='fr'>Fichier non trouvé</xi:fallback>
+   <xi:fallback xml:lang='en'>File not found</xi:fallback>
    </xi:include>
    <xi:include href="./article02.xml" parse="xml">
-      <xi:fallback>Fichier non trouvé</xi:fallback>
+      <xi:fallback xml:lang='fr'>Fichier non trouvé</xi:fallback>
+      <xi:fallback xml:lang='en'>File not found</xi:fallback>
    </xi:include>
+</body>
+</text>
 </teiCorpus>

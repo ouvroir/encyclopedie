@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../schemas/tei_jtei.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="../../schemas/tei_jtei.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../schemas/tei_jteiCustomOk.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../../schemas/tei_jteiCustomOk.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-stylesheet type="text/xsl" href="../xsl/teiJ2html.xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
@@ -8,6 +8,12 @@
          <titleStmt>
             <title xml:lang="fr" type="main">Liste des auteurs et des autrices</title>
             <title xml:lang="en" type="main">List of authors</title>
+            <author> <!--add authors (y compris assistants de recherche qui font l'encodage ou créateur/créatrice du script de transformation) => à voir-->
+            <forename></forename> <!-- forename and surname do not need translation (important for checks in xslt) -->
+            <surname></surname> <!-- only this tag and maybe affiliation would require translation -->
+            <roleName></roleName>
+            <affiliation></affiliation>
+            </author>
          </titleStmt>
          <publicationStmt>
             <publisher />
@@ -32,7 +38,7 @@
          <langUsage>
             <language ident="fr"/>
          </langUsage>
-         <textClass>
+         <textClass>  <!--may not be necessary here, only in chapters and articles-->
             <keywords xml:lang="fr">
                <term>architecture</term>
                <term>société</term>
@@ -46,9 +52,9 @@
             <head xml:lang="fr">Liste des auteurs et des autrices</head>
             <head xml:lang="en">List of authors</head>
             <person xml:id="ecd">
-                <persName>
+              <persName> 
                     <forename>Emmanuel</forename>
-                    <surname>Château-Dutier</forename>
+                    <surname>Château-Dutier</surname>
                 </persName>
                 <note xml:lang="fr">
                     <p>Emmanuel Château-Dutier est historien de l’architecture et professeur agrégé en muséologie numérique à l’Université de Montréal. Ses recherches portent sur l’administration de l’architecture publique en France au XIX<hi rend="superscript">e</hi> siècle, la muséologie et l’histoire de l’art numériques. Il est responsable de l’axe numérique du Partenariat <title>Des nouveaux usages des collections dans les musées d’art</title> (la collection partagée) et assure la co-direction scientifique de l’<ref target="https://ouvroir.umontreal.ca">Ouvroir d’histoire de l’art et de muséologie numériques</ref> qui l’accompagne. Il est spécialisé dans le domaine des métadonnées culturelles, les éditions structurées, les technologies XML, le web sémantique et le web de données ouvertes et liées. Signataire du <title>Manifeste des humanités numériques</title> en 2010, Emmanuel Château a pris une part active dans la constitution d’une communauté francophone des humanités numériques. Membre fondateur d’Humanistica et de la revue <title>Humanités Numériques</title>, il est également vice-président francophone de la Société canadienne des humanités numériques.</p>

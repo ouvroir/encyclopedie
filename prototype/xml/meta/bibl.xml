@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schemas/tei_jteiCustomOk.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../../schemas/tei_jteiCustomOk.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet type="text/xsl" href="../xsl/teiJ2html.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="fr" type="main">Liste des auteurs et des autrices</title>
+            <title xml:lang="en" type="main">List of authors</title>
+            <author> <!--add authors (y compris assistants de recherche qui font l'encodage ou créateur/créatrice du script de transformation) => à voir-->
+            <forename></forename> <!-- forename and surname do not need translation (important for checks in xslt) -->
+            <surname></surname>
+            <roleName></roleName> <!-- only this tag and maybe affiliation would require translation -->
+            <affiliation></affiliation>
+            </author>
+         </titleStmt>
+         <publicationStmt>
+            <publisher />
+            <date when="2021">2021</date>
+            <idno type="DOI">10.400/encynucma/article02</idno>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">
+                  <p>Ce contenu est mis à disposition sous licence Creative Commons Attribution 4.0.</p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <seriesStmt>
+            <title xml:lang="fr" type="main">Encyclopédie des nouveaux usages des collections dans les musées d’art</title>
+            <title xml:lang="en" type="main">Encyclopedia of New Uses of Collections</title>
+            <idno type="URI">http://www.nucma.ca</idno>
+         </seriesStmt>
+         <sourceDesc xml:id="nucma-acquisition-article01">
+            <p>Fichier nativement numérique</p>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="fr"/>
+         </langUsage>
+         <textClass> <!--may not be necessary here, only in chapters and articles-->
+            <keywords xml:lang="fr">
+               <term>architecture</term>
+               <term>société</term>
+            </keywords>
+         </textClass>
+      </profileDesc>
+   </teiHeader>
+   <text>
+    <body>
+       <listBibl> 
+        <head xml:lang="fr">Bibliographie</head>
+        <head xml:lang="en">Bibliography</head>
+        <!-- add to schema teij-->
+        <biblStruct type="book" xml:id="Dean1996" corresp="http://zotero.org/users/4883/items/BV9Z35EQ">
+         <monogr>
+             <title level="m">Museum exhibition: theory and practice</title>
+             <title type="short">Museum exhibition</title>
+             <idno type="ISBN">978-0-415-08017-0 978-0-415-08016-3</idno>
+             <author>
+                 <forename>David</forename>
+                 <surname>Dean</surname>
+             </author>
+             <imprint>
+                 <pubPlace>London</pubPlace>
+                 <publisher>Routledge</publisher>
+                 <date>1996</date>
+             </imprint>
+         </monogr>
+         <series>
+             <title level="s">Heritage studies / museum studies</title>
+         </series>
+     </biblStruct>
+     <biblStruct type="book" xml:id="Lahav2023" corresp="http://zotero.org/users/4883/items/YY4IJN7B">
+         <monogr>
+             <title level="m"
+                 >Curating, interpretation and museums: when attitude becomes form</title>
+             <title type="short">Curating, interpretation and museums</title>
+             <idno type="ISBN">978-1-03-208141-0 978-1-03-208145-8</idno>
+             <idno type="callNumber">AM7 .L34 2023</idno>
+             <author>
+                 <forename>Sylvia</forename>
+                 <surname>Lahav</surname>
+             </author>
+             <imprint>
+                 <pubPlace>Abingdon, Oxon ; New York, NY</pubPlace>
+                 <publisher>Routledge</publisher>
+                 <date>2023</date>
+             </imprint>
+         </monogr>
+     </biblStruct>
+     <biblStruct type="journalArticle" xml:id="Weil1999"
+         corresp="http://zotero.org/users/4883/items/AKIWNRD7">
+         <analytic>
+             <title level="a"
+                 >From Being about Something to Being for Somebody: The Ongoing Transformation of the American Museum</title>
+             <title type="short">From Being about Something to Being for Somebody</title>
+             <author>
+                 <forename>Stephen E.</forename>
+                 <surname>Weil</surname>
+             </author>
+         </analytic>
+         <monogr>
+             <title level="j">Daedalus</title>
+             <idno type="ISSN">0011-5266</idno>
+             <imprint>
+                 <biblScope unit="volume">128</biblScope>
+                 <biblScope unit="issue">3</biblScope>
+                 <biblScope unit="page">229-258</biblScope>
+                 <date>1999</date>
+                 <note type="accessed">2024-04-01T15:05:09Z</note>
+                 <note type="url">https://www.jstor.org/stable/20027573</note>
+             </imprint>
+         </monogr>
+     </biblStruct>
+     <biblStruct type="thesis" xml:id="Gaston2019"
+         corresp="http://zotero.org/users/4883/items/EBUC5B39">
+         <monogr>
+             <title level="m"
+                 >If These Walls Could Talk:  Best Practices for Storytelling in Historic House Museums</title>
+             <title type="short">If These Walls Could Talk</title>
+             <author>
+                 <forename>Hannah</forename>
+                 <surname>Gaston</surname>
+             </author>
+             <imprint>
+                 <date>2019</date>
+                 <note type="url">https://scholarship.shu.edu/dissertations/2694</note>
+                 <note type="thesisType">MA Museum Professions</note>
+             </imprint>
+         </monogr>
+     </biblStruct>
+     <biblStruct type="journalArticle" xml:id="Bedford2001"
+         corresp="http://zotero.org/users/4883/items/TG8SJ6HB">
+         <analytic>
+             <title level="a">Storytelling: The Real Work of Museums</title>
+             <idno type="DOI">10.1111/j.2151-6952.2001.tb00027.x</idno>
+             <title type="short">Storytelling</title>
+             <author>
+                 <forename>Leslie</forename>
+                 <surname>Bedford</surname>
+             </author>
+         </analytic>
+         <monogr>
+             <title level="j">Curator: The Museum Journal</title>
+             <idno type="ISSN">2151-6952</idno>
+             <imprint>
+                 <biblScope unit="volume">44</biblScope>
+                 <biblScope unit="issue">1</biblScope>
+                 <biblScope unit="page">27-34</biblScope>
+                 <date>2001</date>
+                 <note type="accessed">2024-04-07T16:26:50Z</note>
+                 <note type="url"
+                     >https://onlinelibrary.wiley.com/doi/abs/10.1111/j.2151-6952.2001.tb00027.x</note>
+             </imprint>
+         </monogr>
+     </biblStruct>
+     <biblStruct type="newspaperArticle" xml:id="Brown2023"
+         corresp="http://zotero.org/users/4883/items/WH7EU67W">
+         <analytic>
+             <title level="a"
+                 >He had no science degree, but his Ontario Science Centre exhibits ‘changed museums’</title>
+             <author>
+                 <forename>Edward</forename>
+                 <surname>Brown</surname>
+             </author>
+         </analytic>
+         <monogr>
+             <title level="m">Toronto Star</title>
+             <imprint>
+                 <date>2023</date>
+                 <note type="accessed">2024-04-07T16:40:58Z</note>
+                 <note type="url"
+                     >https://www.thestar.com/news/gta/he-had-no-science-degree-but-his-ontario-science-centre-exhibits-changed-museums/article_7fd4d91d-5ea8-54ff-83b4-06045c7d5aa2.html</note>
+             </imprint>
+         </monogr>
+     </biblStruct>
+     <biblStruct type="journalArticle" xml:id="Brown2018"
+         corresp="http://zotero.org/users/4883/items/Y82BUB5D">
+         <analytic>
+             <title level="a">The definition of the museum through its social role</title>
+             <idno type="DOI">10.1111/cura.12276</idno>
+             <author>
+                 <forename>Karen</forename>
+                 <surname>Brown</surname>
+             </author>
+             <author>
+                 <forename>François</forename>
+                 <surname>Mairesse</surname>
+             </author>
+         </analytic>
+         <monogr>
+             <title level="j">Curator: The Museum Journal</title>
+             <idno type="ISSN">2151-6952</idno>
+             <imprint>
+                 <biblScope unit="volume">61</biblScope>
+                 <biblScope unit="issue">4</biblScope>
+                 <biblScope unit="page">525-539</biblScope>
+                 <date>2018</date>
+                 <note type="accessed">2024-04-07T17:27:42Z</note>
+                 <note type="url">https://onlinelibrary.wiley.com/doi/abs/10.1111/cura.12276</note>
+             </imprint>
+         </monogr>
+     </biblStruct>
+     <biblStruct type="bookSection" xml:id="Langer2022"
+         corresp="http://zotero.org/users/4883/items/IP9IXHIF">
+         <analytic>
+             <title level="a"
+                 >The why, what, adn how of the best storytelling in museum exhibitions</title>
+             <author>
+                 <forename>Benjamin</forename>
+                 <surname>Filene</surname>
+             </author>
+         </analytic>
+         <monogr>
+             <title level="m">Storytelling in museums</title>
+             <idno type="ISBN">978-1-5381-5693-3 978-1-5381-5694-0</idno>
+             <idno type="callNumber">AM7 .S77 2022</idno>
+             <editor>
+                 <forename>Adina</forename>
+                 <surname>Langer</surname>
+             </editor>
+             <imprint>
+                 <pubPlace>Lanham</pubPlace>
+                 <biblScope unit="page">3-</biblScope>
+                 <publisher>Rowman &amp; Littlefield</publisher>
+                 <date>2022</date>
+             </imprint>
+         </monogr>
+     </biblStruct>
+     <biblStruct type="journalArticle" xml:id="Gilman1916"
+         corresp="http://zotero.org/users/4883/items/7TBYCDWI">
+         <analytic>
+             <title level="a">Museum Fatigue</title>
+             <author>
+                 <forename>Benjamin Ives</forename>
+                 <surname>Gilman</surname>
+             </author>
+         </analytic>
+         <monogr>
+             <title level="j">The Scientific Monthly</title>
+             <idno type="ISSN">0096-3771</idno>
+             <imprint>
+                 <biblScope unit="volume">2</biblScope>
+                 <biblScope unit="issue">1</biblScope>
+                 <biblScope unit="page">62-74</biblScope>
+                 <date>1916</date>
+                 <note type="accessed">2024-04-19T19:32:06Z</note>
+                 <note type="url">https://www.jstor.org/stable/6127</note>
+             </imprint>
+         </monogr>
+     </biblStruct>
+     <biblStruct type="journalArticle" xml:id="Gilman1907"
+         corresp="http://zotero.org/users/4883/items/ZTS3VQZQ">
+         <analytic>
+             <title level="a">The Museum Past, Present, and Future</title>
+             <author>
+                 <forename>Benjamin Ives</forename>
+                 <surname>Gilman</surname>
+             </author>
+         </analytic>
+         <monogr>
+             <title level="j">Museum of Fine Arts Bulletin</title>
+             <idno type="ISSN">0899-0344</idno>
+             <imprint>
+                 <biblScope unit="volume">5</biblScope>
+                 <biblScope unit="issue">27</biblScope>
+                 <biblScope unit="page">42-47</biblScope>
+                 <date>1907</date>
+                 <note type="accessed">2024-04-19T19:33:09Z</note>
+                 <note type="url">https://www.jstor.org/stable/4423348</note>
+             </imprint>
+         </monogr>
+     </biblStruct>
+     <biblStruct type="journalArticle" xml:id="Maxwell2002"
+         corresp="http://zotero.org/users/4883/items/X8FQAXW2">
+         <analytic>
+             <title level="a"
+                 >Museums as Learning Settings: The Importance of the Physical Environment</title>
+             <title type="short">Museums as Learning Settings</title>
+             <author>
+                 <forename>Lorraine E.</forename>
+                 <surname>Maxwell</surname>
+             </author>
+             <author>
+                 <forename>Gary W.</forename>
+                 <surname>Evans</surname>
+             </author>
+         </analytic>
+         <monogr>
+             <title level="j">The Journal of Museum Education</title>
+             <idno type="ISSN">1059-8650</idno>
+             <imprint>
+                 <biblScope unit="volume">27</biblScope>
+                 <biblScope unit="issue">1</biblScope>
+                 <biblScope unit="page">3-7</biblScope>
+                 <date>2002</date>
+                 <note type="accessed">2024-04-19T19:33:15Z</note>
+                 <note type="url">https://www.jstor.org/stable/40479225</note>
+             </imprint>
+         </monogr>
+     </biblStruct>
+     <biblStruct type="journalArticle" xml:id="Yellis1977"
+         corresp="http://zotero.org/users/4883/items/YBXXWKX7">
+         <analytic>
+             <title level="a"
+                 >Who Is Benjamin Ives Gilman and Why Is He Saying These Awful Things about the Way I Do My Job?</title>
+             <author>
+                 <forename>Ken</forename>
+                 <surname>Yellis</surname>
+             </author>
+             <author>
+                 <forename>Marlene M.</forename>
+                 <surname>Robinson</surname>
+             </author>
+             <author>
+                 <forename>Joseph</forename>
+                 <surname>Reis</surname>
+             </author>
+         </analytic>
+         <monogr>
+             <title level="j">Roundtable Reports</title>
+             <idno type="ISSN">0739-4365</idno>
+             <imprint>
+                 <biblScope unit="page">10-20</biblScope>
+                 <date>1977</date>
+                 <note type="accessed">2024-04-19T19:33:24Z</note>
+                 <note type="url">https://www.jstor.org/stable/40479314</note>
+             </imprint>
+         </monogr>
+     </biblStruct>
+     <biblStruct type="journalArticle" xml:id="zoteroItem_TFGJFIDB"
+         corresp="http://zotero.org/users/4883/items/TFGJFIDB">
+         <analytic>
+             <title level="a">The Museum Docent</title>
+         </analytic>
+         <monogr>
+             <title level="j">Roundtable Reports</title>
+             <idno type="ISSN">0739-4365</idno>
+             <imprint>
+                 <date>1977</date>
+                 <note type="accessed">2024-04-19T19:33:52Z</note>
+                 <note type="url">https://www.jstor.org/stable/40478299</note>
+             </imprint>
+         </monogr>
+     </biblStruct>
+     <biblStruct type="journalArticle" xml:id="Curran1995"
+         corresp="http://zotero.org/users/4883/items/YKN9XQW4">
+         <analytic>
+             <title level="a">Discovering the History of Museum Education</title>
+             <author>
+                 <forename>Emily</forename>
+                 <surname>Curran</surname>
+             </author>
+         </analytic>
+         <monogr>
+             <title level="j">The Journal of Museum Education</title>
+             <idno type="ISSN">1059-8650</idno>
+             <imprint>
+                 <biblScope unit="volume">20</biblScope>
+                 <biblScope unit="issue">2</biblScope>
+                 <biblScope unit="page">5-6</biblScope>
+                 <date>1995</date>
+                 <note type="accessed">2024-04-19T19:34:03Z</note>
+                 <note type="url">https://www.jstor.org/stable/40479021</note>
+             </imprint>
+         </monogr>
+     </biblStruct>
+     <biblStruct type="journalArticle" xml:id="Gilman1912"
+         corresp="http://zotero.org/users/4883/items/MPCAFR5Q">
+         <analytic>
+             <title level="a">Docent Service: Its Sphere, Character and Need</title>
+             <title type="short">Docent Service</title>
+             <author>
+                 <forename>Benjamin Ives</forename>
+                 <surname>Gilman</surname>
+             </author>
+         </analytic>
+         <monogr>
+             <title level="j">Annual Report for the Year ... (Museum of Fine Arts, Boston)</title>
+             <idno type="ISSN">2380-534X</idno>
+             <imprint>
+                 <biblScope unit="volume">37</biblScope>
+                 <biblScope unit="page">80-82</biblScope>
+                 <date>1912</date>
+                 <note type="accessed">2024-04-19T19:34:28Z</note>
+                 <note type="url">https://www.jstor.org/stable/43478344</note>
+             </imprint>
+         </monogr>
+     </biblStruct>
+     <biblStruct type="book" xml:id="Davallon2023"
+         corresp="http://zotero.org/users/4883/items/HZZ93EJX">
+         <monogr>
+             <title level="m"
+                 >Des traces patrimoniales en devenir, une analyse communicationnelle</title>
+             <title type="short">Des traces patrimoniales en devenir</title>
+             <idno type="ISBN">978-1-78405-972-9</idno>
+             <author>
+                 <forename>Jean</forename>
+                 <surname>Davallon</surname>
+             </author>
+             <imprint>
+                 <pubPlace>Paris</pubPlace>
+                 <publisher>ISTE éditions</publisher>
+                 <date>2023</date>
+             </imprint>
+         </monogr>
+         <series>
+             <title level="s">Traces</title>
+             <biblScope unit="volume">6</biblScope>
+         </series>
+     </biblStruct>
+ </listBibl>
+    </body>
+   </text>
+</TEI>
