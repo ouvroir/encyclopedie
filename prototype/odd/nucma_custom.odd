@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:rng="http://relaxng.org/ns/structure/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Schéma personnalisé pour projet NUCMA</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>Publication numérique</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Né numérique</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div1>
+      	<head>Personnalisation du schéma de Commons Publishing OpenEdition pour le projet NUCMA</head>
+        <schemaSpec ident="Nucma" start="TEI" source="commons-publishing_compiled.odd">
+        
+<!-- ############################################## 
+     #### moduleRef customisation              ####
+     ############################################## -->
+                                               
+        <moduleRef key="tei"/>
+        <moduleRef key="header" except="title"/>                                         
+        <moduleRef key="core" except="biblStruct"/>
+        <moduleRef key="textstructure" />
+        <moduleRef key="linking" />
+        <moduleRef key="namesdates" />
+        <moduleRef key="verse" />
+        <moduleRef key="figures"/>
+        <moduleRef key="tagdocs"/> 
+        <moduleRef key="dictionaries"/>
+        
+        
+<!-- ############################################## 
+     #### Model Class customisation       ####
+     ############################################## -->
+     <classSpec ident="model.objectLike" type="model" mode="add"/>
+     <classSpec ident="model.personLike" type="model" mode="add"/>
+        
+<!-- ############################################## 
+     #### Elements addition                    ####
+     ############################################## -->
+     <elementRef key="listObject" source="tei:4.7.0" />
+          <elementRef key="roleName" source="tei:4.7.0" />
+          <elementRef key="object" source="tei:4.7.0" />
+          <elementRef key="listPerson" source="tei:4.7.0" />
+          <elementRef key="person" source="tei:4.7.0" />
+          <elementRef key="biblStruct" source="tei:4.7.0" />
+          <elementRef key="q" source="tei:4.7.0" />
+          <elementRef key="emph" source="tei:4.7.0" />
+          <elementRef key="soCalled" source="tei:4.7.0" />
+          <elementRef key="foreign" source="tei:4.7.0" />
+          <elementRef key="seriesStmt" source="tei:4.7.0" />
+          <elementRef key="placeName" source="tei:4.7.0" />
+          <elementRef key="pubPlace" source="tei:4.7.0" />
+          <elementRef key="title" source="tei:4.7.0" />
+          <elementRef key="objectIdentifier" source="tei:4.7.0"/>
+          <elementRef key="objectName" source="tei:4.7.0"/>
+<!-- ############################################## 
+     #### Elements customisation               ####
+     ############################################## -->   
+     <elementSpec ident="author" mode="change" module="core">
+      <attList>
+     <attDef ident="ref" mode="replace" usage="opt"><datatype><dataRef key="teidata.pointer"/></datatype></attDef></attList>
+     </elementSpec>
+     <elementSpec ident="sourceDesc" mode="change" module="header">
+      <attList>
+        <attDef ident="xml:id" mode="add" usage="opt"><datatype><dataRef key="ID"/></datatype></attDef></attList>
+     </elementSpec>
+     <elementSpec ident="div" mode="change" module="textstructure">
+      <attList>
+        <attDef ident="type" mode="replace" usage="opt"> <datatype><dataRef key="teidata.text"/></datatype>
+      <valList mode="change" type="open"/>
+     </attDef>
+    </attList>
+     </elementSpec>
+     <elementSpec ident="note" mode="change" module="core">
+      <attList>
+        <attDef ident="type" mode="replace" usage="opt"> <datatype><dataRef key="teidata.text"/></datatype>
+      <valList mode="change" type="open"/>
+     </attDef>
+    </attList>
+     </elementSpec>
+     <elementSpec ident="idno" mode="change" module="header">
+      <attList>
+        <attDef ident="type" mode="change" usage="opt"> <datatype><dataRef key="teidata.text"/></datatype>
+      <valList mode="change" type="closed">
+        <valItem mode="add" ident="ISSN"/>
+        <valItem mode="add" ident="ISBN"/>
+        <valItem mode="add" ident="URI"/>
+        <valItem mode="add" ident="callNumber"/>
+      </valList>
+     </attDef></attList>
+     </elementSpec>
+     <elementSpec ident="biblStruct" mode="change" module="core">
+      <attList>
+        <attDef ident="corresp" mode="add" usage="opt"> <datatype><dataRef key="teidata.text"/></datatype></attDef></attList>
+     </elementSpec>
+     <elementSpec ident="person" mode="change">
+      <content>
+        <sequence>
+        <elementRef key="persName" minOccurs="1" maxOccurs="unbounded"/>
+          <alternate minOccurs="0" maxOccurs="unbounded">
+        <elementRef key="note" />
+          <elementRef key="affiliation"/>
+          <elementRef key="idno"/>
+          </alternate>
+        </sequence>
+      </content>
+     </elementSpec>
+      </schemaSpec>
+      </div1>
+    </body>
+  </text>
+</TEI>
