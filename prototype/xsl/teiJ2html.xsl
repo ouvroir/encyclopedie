@@ -91,7 +91,7 @@
         <section class="page_abstract">
             <h2 class="page_abstractTitle f1-18">Résumé de l’article</h2>
             <div class="page_abstractText txt">
-                <xsl:apply-templates select="div[@type='abstract']"/>
+                <xsl:apply-templates select=".//div[@type='abstract']"/>
             </div>
         </section>
         

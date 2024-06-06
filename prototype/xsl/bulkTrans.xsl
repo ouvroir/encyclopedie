@@ -17,16 +17,18 @@
     <xsl:output method="xhtml" html-version="5.0" include-content-type="no" omit-xml-declaration="yes" exclude-result-prefixes="#all" encoding="UTF-8" indent="yes"/>
     <xsl:strip-space elements="*"/>
 
-    <xsl:variable name="buildPath" select="doc('config.xml')/fct:config/fct:build"/>
-    <xsl:variable name="folder" select="collection('../xml/acquisition?recurse=yes;select=*.xml')"/>
+<xsl:variable name="config" select="resolve-uri('config.xml')"/>
+<xsl:variable name="contentPath" select="doc($config)/fct:config/fct:content"/>
+    <xsl:variable name="buildPath" select="doc($config)/fct:config/fct:build"/>
+    <xsl:variable name="folder" select="collection($contentPath||'?recurse=yes;select=*.xml')"/>
 
-<!--Test generation des html sans module file ^^ [* question de chemin à voir]-->
+<!--Test generation des html sans module file ^^ [resolve-uri() semble faire l'affaire]-->
  <xsl:template name="xsl:initial-template">
  <xsl:for-each select="$folder">
  <xsl:variable name="file" select="base-uri(.)"/>
  <xsl:variable name="filename" select="tokenize($file,'/')[last()]"/>
   <xsl:variable name="dest" select="replace($filename,'.xml', '')"/>
- <xsl:result-document href="{$buildPath}{$dest}.html"> <!--takes base dir of the present file as reference (project dir) :| -->
+ <xsl:result-document href="{$buildPath}{$dest}.html"> 
  <xsl:copy-of select="fct:generate($file,'teiJ2html.xsl')"/> 
  </xsl:result-document>
  </xsl:for-each> 
