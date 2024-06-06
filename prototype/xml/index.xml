@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../schemas/tei_jtei-2.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="../schemas/tei_jtei-2.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../schemas/nucma_custom.rng" type="application/xml" schematypens="../../schemas/tei_jtei-2.rng"?>
+<?xml-model href="../schemas/nucma_custom.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <teiCorpus xmlns="http://www.tei-c.org/ns/1.0"
    xmlns:xi="http://www.w3.org/2001/XInclude">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title xml:lang="fr" type="main">Encyclopédie des nouveaux usages des collections dans les musées d’art</title>
-            <title xml:lang="en" type="main">Encyclopedia of New Uses of Collections</title>
+            <title xml:lang="fr" type="main">Acquisition</title>
+            <title xml:lang="en" type="main">Acquisition</title>
+            <author></author>
          </titleStmt>
          <publicationStmt>
             <publisher xml:lang="fr">Groupe de recherche et de réflexion CIÉCO</publisher>
@@ -15,18 +16,27 @@
             <date when="2023">2023</date>
             <!-- <idno type="DOI">10.400/revuehn2355</idno> -->
          </publicationStmt>
+         <seriesStmt>
+            <title xml:lang="fr" type="main">Encyclopédie des nouveaux usages des collections dans les musées d’art</title>
+            <title xml:lang="en" type="main">Encyclopedia of New Uses of Collections</title>
+            <idno type="URI">http://www.nucma.ca</idno>
+         </seriesStmt>
          <sourceDesc xml:id="nucma-acquisition">
             <p>Fichier nativement numérique</p>
          </sourceDesc>
       </fileDesc>
    </teiHeader>
-   <xi:include href="./acquisition/index.xml" parse="xml">
-      <xi:fallback>Fichier non trouvé</xi:fallback>
+   <text>
+      <body>
+   <xi:include href="./acquisition/article01.xml" parse="xml">
+   <!--Fallback it's always the same: might be a good idea to account for it programmatically in xslt-->
+   <xi:fallback xml:lang='fr'>Fichier non trouvé</xi:fallback>
+   <xi:fallback xml:lang='en'>File not found</xi:fallback>
    </xi:include>
-   <!-- <xi:include href="./documentation/index.xml" parse="xml">
-      <xi:fallback>Fichier non trouvé</xi:fallback>
-   </xi:include> -->
-   <xi:include href="./meta/auteurs.xml" parse="xml">
-      <xi:fallback>Fichier non trouvé</xi:fallback>
+   <xi:include href="./acquisition/article02.xml" parse="xml">
+      <xi:fallback xml:lang='fr'>Fichier non trouvé</xi:fallback>
+      <xi:fallback xml:lang='en'>File not found</xi:fallback>
    </xi:include>
+</body>
+</text>
 </teiCorpus>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../schemas/tei_jteiCustomOk.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="../../schemas/tei_jteiCustomOk.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../schemas/nucma_custom.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../../schemas/commons-publishing-epenedition.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -11,7 +11,7 @@
                <forename>Fabrice</forename>
                <surname>Moulin</surname>
                <affiliation>Université de Paris-Nanterre</affiliation>
-               <idno type="orcid">0000-0001-8488-2255</idno>
+               <idno type="ORCID">0000-0001-8488-2255</idno>
                <note>
                   <p>Fabrice Moulin est maître de conférences en littérature à l'université Paris-Nanterre. Ses recherches portent sur les liens entre littérature et esthétique. Il a obtenu en 2011 le prix de la Chancellerie des universités pour son mémoire de doctorat.</p>
                   <!-- @todo ajouter un élément bio -->
@@ -26,7 +26,7 @@
                <forename>Emmanuel</forename>
                <surname>Chateau-Dutier</surname>
                <affiliation>Université de Montréal</affiliation>
-               <idno type="orcid">0000-0003-4092-4569</idno>
+               <idno type="ORCID">0000-0003-4092-4569</idno>
             </author>
          </titleStmt>
          <publicationStmt>
@@ -45,10 +45,10 @@
             <title xml:lang="fr" type="sub">Encyclopédie des nouveaux usages des collections dans les musées d’art</title>
             <title xml:lang="en" type="main">Acquisition</title>
             <title xml:lang="en" type="sub">Encyclopedia of New Uses of Collections</title>
-            <idno type="URI">http://www.nucma.ca</idno>
+            <idno type="URL">http://www.nucma.ca</idno>
          </seriesStmt>
 
-         <sourceDesc xml:id="nucma-acquisition-article02">
+         <sourceDesc xml:id="nucma-acquisition-article01">
             <p>Fichier nativement numérique</p>
          </sourceDesc>
       </fileDesc>
@@ -69,7 +69,7 @@
          <div type="abstract">
             <p>Le titre de l’ouvrage que Ledoux publie en 1804, deux ans avant sa mort, justifie à lui seul l’intérêt qu’on pourrait lui porter dans le cadre d’un volume sur la science des mœurs. Il annonce un vaste programme, qui devait à l’origine se déployer en cinq volumes dont seul le premier fut achevé, et réunir l’ensemble de l’œuvre construit et gravé de Ledoux enveloppé d’un texte au souffle étonnant. Assumé par un artiste total surplombant les hommes et les temps, et adressé aux générations à venir, le propos est porté par un « style figuré », presque entièrement métaphorique et allégorique, qui traduit avant tout la haute idée que l’auteur se fait des pouvoirs de l’architecte en matière de réforme sociale et morale.</p>
          </div>
-         <div type="acknowledgements">
+         <div type="ack"> <!-- ack pour acknowledgement-->
             <p>L’auteur tient à remercier...</p>
          </div>
       </front>
@@ -172,7 +172,7 @@
 </quote>
 </p>
 <p>S’il y a ici une science des mœurs, c’est celle qui consiste à organiser et distribuer les pratiques et les <soCalled>habitus</soCalled>, à assurer leur contrôle. Aussi, la voix et le discours le cèdent-ils à l’œil. Cet œil, bien connu, qui embrasse la salle du théâtre de Besançon<ref target="note18"/>
-. Le rayon lumineux qui le traverse, sans qu’on sache s’il en procède ou s’il s’y réfléchit, évoque bien sûr l’organe du savoir et de la connaissance – l’organe de la science. Mais cet œil (et cette science) semble bien étranger à <soCalled>l’observateur</soCalled>, figure qui émerge au siècle des Lumières et préfigure timidement, du journaliste au voyageur, de Mercier à Rétif, le sociologue ou l’anthropologue urbain des XIX<hi rend="superscript">e</hi> puis XX<hi rend="superscript">e</hi> siècles. Si l’œil de Ledoux est étranger à cette démarche de l’observation empirique des mœurs, c’est non seulement parce que sa position inspirée lui confère une portée maçonnique et divine, mais aussi parce qu’observer, ici, c’est avant tout surveiller. Sans tomber dans la caricature de dystopie carcérale que certaines lectures hâtives pourraient développer, il reste évident que la thématique de la surveillance des mœurs, sublimée ici dans cette <q>prunelle pénétrante qui veille sur tout</q> (81), joue un rôle fondamental dans l’approche des mœurs par l’architecte, sans doute au détriment de leur étude. Mais au fond, si la question de la réforme des mœurs justifiait que l’architecte développe un discours de savoir sur les mœurs, celle de la surveillance semble le ramener, peut-être malgré lui (comme s’il devait en rabattre de ses ambitions d’écrivain et de philosophe) au champ qui lui est le plus fondamental : celui du trait, du dessin, de l’espace.</p>
+. Le rayon lumineux qui le traverse, sans qu’on sache s’il en procède ou s’il s’y réfléchit, évoque bien sûr l’organe du savoir et de la connaissance – l’organe de la science. Mais cet œil (et cette science) semble bien étranger à <soCalled>l’observateur</soCalled>, figure qui émerge au siècle des Lumières et préfigure timidement, du journaliste au voyageur, de Mercier à Rétif, le sociologue ou l’anthropologue urbain des XIX<hi rend="sup">e</hi> puis XX<hi rend="sup">e</hi> siècles. Si l’œil de Ledoux est étranger à cette démarche de l’observation empirique des mœurs, c’est non seulement parce que sa position inspirée lui confère une portée maçonnique et divine, mais aussi parce qu’observer, ici, c’est avant tout surveiller. Sans tomber dans la caricature de dystopie carcérale que certaines lectures hâtives pourraient développer, il reste évident que la thématique de la surveillance des mœurs, sublimée ici dans cette <q>prunelle pénétrante qui veille sur tout</q> (81), joue un rôle fondamental dans l’approche des mœurs par l’architecte, sans doute au détriment de leur étude. Mais au fond, si la question de la réforme des mœurs justifiait que l’architecte développe un discours de savoir sur les mœurs, celle de la surveillance semble le ramener, peut-être malgré lui (comme s’il devait en rabattre de ses ambitions d’écrivain et de philosophe) au champ qui lui est le plus fondamental : celui du trait, du dessin, de l’espace.</p>
 </div>
 </body>
 <back>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../schemas/tei_jteiCustomOk.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="../../schemas/tei_jteiCustomOk.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../schemas/nucma_custom.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../../schemas/commons-publishing-openedition.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-stylesheet type="text/xsl" href="../xsl/teiJ2html.xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
@@ -12,7 +12,7 @@
                <forename>Emmanuel</forename>
                <surname>Chateau-Dutier</surname>
                <affiliation>Université de Montréal</affiliation>
-               <idno type="orcid">0000-0003-4092-4569</idno>
+               <idno type="ORCID">0000-0003-4092-4569</idno>
             </author>
          </titleStmt>
          <publicationStmt>
@@ -30,9 +30,9 @@
             <title xml:lang="fr" type="sub">Encyclopédie des nouveaux usages des collections dans les musées d’art</title>
             <title xml:lang="en" type="main">Acquisition</title>
             <title xml:lang="en" type="sub">Encyclopedia of New Uses of Collections</title>
-            <idno type="URI">http://www.nucma.ca</idno>
+            <idno type="URL">http://www.nucma.ca</idno>
          </seriesStmt>
-         <sourceDesc xml:id="nucma-acquisition-article01">
+         <sourceDesc xml:id="nucma-acquisition-article02">
             <p>Fichier nativement numérique</p>
          </sourceDesc>
       </fileDesc>
@@ -85,11 +85,11 @@
 . Dès 1790, il avait adressé un Mémoire sur l’architecture à l’Assemblée nationale avec des <hi rend="italic">Observations sur l’Administration relative à cet Art</hi> qui reprenaient en partie un mémoire déjà adressé au Directeur des bâtiments du roi en 1786<ref target="#n0008" />
 . Il y fustigeait l’attribution de la commande par des jeux d’intrigues courtisanes qui égaraient les ministres, des adjudicataires malhonnêtes et la fainéantise des ouvriers. Dans une certaine mesure, cette nomination lui donnait donc l’occasion de mettre en œuvre plusieurs de ses idées.</p>
 <p>
-   <persName>Rondelet</persName> envisageait l’administration qui lui était confiée comme <q>une agence intermédiaire entre les autorités qui ont Le droit de prononcer sur l’utilité des ouvrages, ceux pour qui ils sont faits, et les agents qui doivent les exécuter<ref target="#n0009"/>
-</q>. Il proposait de l’organiser en quatre divisions relatives aux domaines de travaux, réunies sous l’égide de la Commission : les bâtiments civils, les communications, et les travaux militaires et la formation des cartes.</p>
+   <persName>Rondelet</persName> envisageait l’administration qui lui était confiée comme <q>une agence intermédiaire entre les autorités qui ont Le droit de prononcer sur l’utilité des ouvrages, ceux pour qui ils sont faits, et les agents qui doivent les exécuter
+</q><ref target="#n0009"/>. Il proposait de l’organiser en quatre divisions relatives aux domaines de travaux, réunies sous l’égide de la Commission : les bâtiments civils, les communications, et les travaux militaires et la formation des cartes.</p>
 <p>Comme il le faisait déjà en 1790, et sans doute effrayé par la responsabilité qui lui était confiée (et peut-être aussi par le destin funeste de son prédécesseur), Rondelet s’attaquait à la question, particulièrement sensible à cette époque pour les artistes, de l’attribution de la commande publique<ref target="#n0010" />
-. Pour assurer l’impartialité dans le choix des architectes et des projets, il proposait <q>d’autoriser la commission des travaux publics à s’adjoindre six artistes choisis parmi ceux dont les talents et la probité sont bien connus, et qui formeraient un Bureau d’examen pour tous les projets relatifs aux bâtiments publics, à l’instar des bureaux existants pour les communications et les ouvrages de défense<ref target="#n0011"/>
-</q>.
+. Pour assurer l’impartialité dans le choix des architectes et des projets, il proposait <q>d’autoriser la commission des travaux publics à s’adjoindre six artistes choisis parmi ceux dont les talents et la probité sont bien connus, et qui formeraient un Bureau d’examen pour tous les projets relatifs aux bâtiments publics, à l’instar des bureaux existants pour les communications et les ouvrages de défense
+</q><ref target="#n0011"/>.
 </p>
 <p>De plus, l’architecte proposait l’exposition publique des projets afin de profiter des lumières de tous les artistes et autres citoyens instruits qui pourraient avoir des observations à communiquer, et pour intéresser le public à cette exposition, la publication d’un journal des arts relatif aux travaux publics, dans lequel serait inséré la description des projets et l’extrait des mémoires. Les avis motivés du bureau d’examen et les observations que l’exposition aurait fait naître devaient être rendus publics par la voie d’une telle publication. Passé un certain délai, la commission faisait un rapport sur le résultat de l’avis de ces artistes d’après lequel le Comité devait être en mesure de prendre un arrêté, ou solliciter un décret, pour l’exécution du meilleur projet ou pour la récompense à décerner à son auteur.</p>
 <p>L’organisation proposée comportait également la création d’un corps d’architectes dans les départements, sur le modèle de celui des <orgName>Ponts et chaussées</orgName>. Chaque année à la fin de la campagne de travaux, l’état des ouvrages faits et les projets et devis devaient être envoyés à Paris pour être soumis au Bureau d’examen auquel on adjoignait alors six autres membres, choisis parmi les artistes employés dans toute l’étendue de la République, pour aider à leur examen.</p>
@@ -218,7 +218,7 @@
 <p>A.N., F<hi rend="superscript">21</hi> 2884, <hi rend="italic">Procès-verbaux du Conseil des bâtiments civils</hi>, 1<hi rend="superscript">er</hi> octobre 1812, « Arrêté du ministre concernant la nouvelle organisation du Conseil des bâtiments civils ».</p>
 </note>
 <note xml:id="n0019">
-<p>Jean <hi rend="smallcaps">Rondelet</hi>,<hi rend="italic">op. cit.</hi>
+<p>Jean <hi rend="small-caps">Rondelet</hi>,<hi rend="italic">op. cit.</hi>
 </p>
 </note>
 <note xml:id="n0020">
