@@ -11,12 +11,14 @@
     <xsl:output method="xhtml" html-version="5.0" include-content-type="no" omit-xml-declaration="yes" exclude-result-prefixes="#all" encoding="UTF-8" indent="yes"/>
     <xsl:strip-space elements="*"/>
     
-    <xsl:import href="componentsNew/layout.xsl"/>
-    <xsl:import href="componentsNew/head.xsl"/>
-    <xsl:import href="componentsNew/header.xsl"/>
-    <xsl:import href="componentsNew/footer.xsl"/>
+    <!-- lib importation -->
+    <xsl:import href="lib/article2html.xsl"/>
     
-  
+    <!-- components importation -->
+    <xsl:import href="components/layout.xsl"/>
+    <xsl:import href="components/head.xsl"/>
+    <xsl:import href="components/header.xsl"/>
+    <xsl:import href="components/footer.xsl"/>
     
     <xsl:output method="xhtml" html-version="5.0" include-content-type="no" omit-xml-declaration="yes" exclude-result-prefixes="#all" encoding="UTF-8" indent="yes" />
     <xsl:strip-space elements="*" />
@@ -24,14 +26,19 @@
     <xsl:mode on-no-match="shallow-copy"/>
     <xsl:template match="processing-instruction() | comment()"/>
     
+    <!-- @todo path should be created dynamically -->
     <xsl:variable name="cssPath" select="'css/normalize.css', 'css/main.css'" />
     <xsl:variable name="jsPath" select="'js/script.js'" />
     
+    <!-- @todo deal with title, description and meta with a function for different file types -->
     <xsl:variable name="title" select="'Test de titre'"/>
+    <xsl:variable name="description" select="'Test de titre'"/>
+    <xsl:variable name="authors" select="'Test d’auteurs'"/>
     
     <xsl:template match="/TEI">
         <xsl:call-template name="layout">
             <xsl:with-param name="title" select="$title"/>
+            <xsl:with-param name="description" select="$description"/>
         </xsl:call-template>
     </xsl:template>
     
