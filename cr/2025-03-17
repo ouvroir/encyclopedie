@@ -1,0 +1,109 @@
+---
+title: Réunion encyclopédie
+description: "Compte-rendu de la réunion de travail du 18 février 2025"
+author: ouvroir
+date: 2025-02-17
+draft: false
+tags: 
+    - cr
+    
+---
+
+## ODJ 
+
+- combien d'articles ? Une vingtaine x2. Les a-t-on ? texte livré en mai
+- combien d'heures par article ? 
+- modèle ? 
+
+Mettre la liste des articles à traiter dans le main. 
+
+### Organisation
+
+Mercredi 13h00-14h30 : formation 
+
+Mercredi matin : travail sur les fichiers 
+Mercredi 13h - 14h30 : questions 
+Mercredi après-midi : zoe relit valide ou envoit commentaires
+
+### Process workflow
+REPO PRIVÉ NUCMA
+
+main : publication
+branche à leur nom
+branche validation : article approuvé
+branche next release : quand article selectionné
+
+- Etape 0 
+
+Article arrive dans google drive. Suivi editorial. 
+Quand prêt à etre encodé part en traduction. 
+Attribution à un auxiliaire par issue. 
+
+- Etape 1 - brouillon
+
+Convertisse vers TEI, applique le schéma, procède aux enrichissements. 
+Push sur github sur la branche visualisation.
+
+- Etape 2 - validation 
+
+Quand vous êtes prêt à recevoir des commentaires sur votre demande de tirage, vous pouvez marquer votre brouillon de demande de tirage comme étant prêt pour la révision. Le marquage d’une demande de tirage comme étant prête pour la révision demande des révisions à tous les propriétaires de code. Vous pouvez convertir une demande de tirage en brouillon à tout moment. 
+
+Une page de révision s’affiche et présente un aperçu général des changements sur votre branche (ou sur une branche "validation") et la branche de base du dépôt. S'il s'agit de correction : ajouter un résumé des changements proposés, réviser les changements apportés par les commits, ajouter des étiquettes, des jalons et des personnes responsables, ainsi que mentionner (@mention) des contributeurs individuels ou des équipes. 
+
+Vous pouvez pousser (push) des commits à partir de votre branche de rubrique pour les ajouter à votre demande de tirage existante. Ces commits apparaissent dans l’ordre chronologique au sein de votre demande de tirage et les changements sont visibles sous l’onglet « Fichiers modifiés ».
+
+Zoë va passer en revue vos changements proposés, ajouter des commentaires de révision, participer à la discussion sur le pull request.
+
+Vous pouvez voir des informations sur l’état de déploiement actuel de la branche et sur l’activité de déploiement passée dans l’onglet « Conversation ». 
+
+- Étape 3 - publication
+
+Une fois que tout est validé, Zoë va fusionner vos changements depuis votre branche de fonctionnalité dans la branche de base que vous spécifiez dans votre pull request. 
+
+
+## Calendrier 
+
+- 26 février : Présentation du projet et du workflow. Prise en main des outils. 1h30
+création id github
+installation oxygen
+installation git client
+premier aperçu
+
+- 12 mars : Formation 1er module 1h30
+
+- 19 mars : Formation 2e module 1h30
+
+- 26 mars : début sur brouillon - évalutation sur temps de travail sur 1 article 1h30
+
+= 6h
+
+- 2 avril : encode complements numeriques et biblio 4h
+
+- 9 avril : encode complements numeriques et biblio 4h 
+
+- 16 avril : encode complements numeriques et biblio 4h
+
+- 23 avril : encode complements numeriques et biblio 4h
+
+- 30 avril : encode complements numeriques et biblio 4h
+
+ = 26h
+
+- 7 mai : encode 5 articles 6h/sem 
+
+- 14 mai : encode 5 articles 6h/sem 
+
+- 21 mai : encode 5 articles 6h/sem 
+
+- 28 mai : encode 5 articles 6h/sem 
+
+= 50h
+
+
+## A faire 
+
+- envoyer mail josée : Done
+- creer regle pour ne pas publier sur la branche main et next release : Compliqué avec nouveaux droits github entreprise
+- creer actions quand on aura finalisé le workflow. 
+- créer branches sur nucma : DONE
+- créer projet sur nucma : DONE
